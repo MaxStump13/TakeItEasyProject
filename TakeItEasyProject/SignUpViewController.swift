@@ -61,9 +61,15 @@ class SignUpViewController: UIViewController {
           }
     
     
-    // This action function sends a push notification after clicking the getOTP button
+    // This action function calls to the signUp() function
+    // Sends a push notification after clicking the getOTP button
     
     @IBAction func getOTP(_ sender: Any) {
+        
+        if getOTPSignUp() == true {
+            
+            errorMessage.text = ""
+        
         let dialogMessage = UIAlertController(title: "Alert", message: "Your code is \(pin)", preferredStyle: .alert)
                 
                 // Create Confirm button with action handler
@@ -84,6 +90,7 @@ class SignUpViewController: UIViewController {
                 // Present dialog message to user
                 self.present(dialogMessage, animated: true, completion: nil)
             }
+    }
     
     
     // This function displays after confirming the first push notification
@@ -132,7 +139,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signInAppear(_ sender: Any) {
         signUp()
-        
+            
     }
     
     
@@ -240,10 +247,7 @@ class SignUpViewController: UIViewController {
     }
 
     
-    // This function checks CoreData for our user, seeing if they have registered yet, or if they register for the first time
-    // If the user doesn't input enough credentials, give error message "Please input Credentials"
-    
-    func signUp() {
+    func getOTPSignUp() -> Bool {
         let name = enterNameTextField.text!
         let username = enterEmailTextField.text!
         let password = enterPasswordTextField.text!
@@ -252,17 +256,46 @@ class SignUpViewController: UIViewController {
     
     if !(didRegisterAccountValidation(input: name) && didRegisterAccountValidation(input: username) && didRegisterAccountValidation(input: password) && didRegisterAccountValidation(input: reEnterPassword) && didRegisterAccountValidation(input: mobile)) {
         self.errorMessage.text = "Please input credentials."
+        return false
+    }
+        else if !regexCredentials(username: username, password: password, repassword: reEnterPassword) {
+               // self.errorMessage.text = "HELP"
+            return false
+        }
+        else {
+            return true
+        }
+}
+    
+    
+    // This function checks CoreData for our user, seeing if they have registered yet, or if they register for the first time
+    // If the user doesn't input enough credentials, give error message "Please input Credentials"
+    
+    func signUp() -> Bool {
+        let name = enterNameTextField.text!
+        let username = enterEmailTextField.text!
+        let password = enterPasswordTextField.text!
+        let reEnterPassword = ReEnterPasswordTextField.text!
+        let mobile = mobileNumberTextField.text!
+    
+    if !(didRegisterAccountValidation(input: name) && didRegisterAccountValidation(input: username) && didRegisterAccountValidation(input: password) && didRegisterAccountValidation(input: reEnterPassword) && didRegisterAccountValidation(input: mobile)) {
+        self.errorMessage.text = "Please input credentials."
+        return false
         
     } else if !regexCredentials(username: username, password: password, repassword: reEnterPassword) {
            // self.errorMessage.text = "HELP"
+        return false
         }
     
         else if DBHelperUser.dbHelperUser.isUserRegistered(username: username) {
                 self.errorMessage.text = "You registered already, go to log in page."
+            return false
             
             } else {
                 DBHelperUser.dbHelperUser.createUser(nameValue: name, emailValue: username, passwordValue: password, reEnterPasswordValue: reEnterPassword, mobileValue: mobile)
                 self.errorMessage.text = "Registered succesfully! Please log in."
+                return true
             }
     }
+    
 }
