@@ -273,11 +273,11 @@
             </objects>
             <point key="canvasLocation" x="636" y="364"/>
         </scene>
-        <!--Item-->
+        <!--Note-->
         <scene sceneID="YyO-as-M3S">
             <objects>
                 <navigationController id="2vI-zc-IEY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZTQ-hi-te8"/>
+                    <tabBarItem key="tabBarItem" title="Note" image="note.text" catalog="system" id="ZTQ-hi-te8"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bnC-3f-FXL">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -415,6 +415,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="questionmark.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
