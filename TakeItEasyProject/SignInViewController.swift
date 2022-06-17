@@ -104,8 +104,8 @@ class SignInViewController: UIViewController {
             let correctPassword = user.password
             if passwordTextField == correctPassword {
                 //present the tab bar controller in full screen
-                let storyboard = UIStoryboard(name: "SignUp", bundle: nil)
-                let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "viewController")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "TabBar")
                 //show the tab controller as an instantiated vc
                 loginNextScreen.modalPresentationStyle = .fullScreen
                 self.present(loginNextScreen, animated: true, completion: nil)
