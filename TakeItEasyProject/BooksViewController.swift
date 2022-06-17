@@ -28,6 +28,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
         let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCell", for: indexPath) as! GeneralBookCollectionViewCell
         bookCell.layer.cornerRadius = 5.0
         bookCell.layer.masksToBounds = true
+        //pizza
 
             bookCell.backgroundColor = .yellow
             bookCell.nameA.text = filteredBooks[indexPath.row].volumeInfo.title
