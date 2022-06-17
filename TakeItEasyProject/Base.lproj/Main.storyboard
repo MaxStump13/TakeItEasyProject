@@ -60,10 +60,21 @@
         <!--Search-->
         <scene sceneID="W5K-Ev-INH">
             <objects>
-                <viewController id="Lvv-lM-hac" sceneMemberID="viewController">
+                <viewController id="Lvv-lM-hac" customClass="SearchController" customModule="TakeItEasyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6OQ-i3-lzN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRZ-NL-4mZ">
+                                <rect key="frame" x="102" y="160" width="218" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Search"/>
+                                <connections>
+                                    <action selector="openGoogle:" destination="Lvv-lM-hac" eventType="touchUpInside" id="Ok8-bT-4BP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Viq-xP-j4o"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -71,7 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJf-gp-agd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2520" y="-232"/>
+            <point key="canvasLocation" x="2518.840579710145" y="-232.36607142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ziv-jO-8kp">
