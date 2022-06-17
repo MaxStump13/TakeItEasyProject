@@ -27,7 +27,7 @@
         <!--Note Controller-->
         <scene sceneID="CGa-4D-CoI">
             <objects>
-                <viewController storyboardIdentifier="NotePage" id="3e2-yx-FMG" customClass="NoteController" customModule="TakeItEasy2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NotePage" id="3e2-yx-FMG" customClass="NoteController" customModule="TakeItEasyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bKR-as-qjh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
         <!--Note Content-->
         <scene sceneID="R96-Yy-LTD">
             <objects>
-                <viewController storyboardIdentifier="content" id="8fk-Fk-vl2" customClass="NoteContent" customModule="TakeItEasy2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="content" id="8fk-Fk-vl2" customClass="NoteContent" customModule="TakeItEasyProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kss-86-6pL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
