@@ -14,6 +14,13 @@
 		3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */; };
 		3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B89285B91AF0030EC25 /* Assets.xcassets */; };
 		3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */; };
+		3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B94285B92120030EC25 /* SearchViewController.swift */; };
+		8434B9CD285BA3DA0028A5D8 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */; };
+		8434B9CF285BA3E50028A5D8 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */; };
+		8434B9D1285BA3F70028A5D8 /* DbHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D0285BA3F60028A5D8 /* DbHandler.swift */; };
+		8434B9D3285BA4040028A5D8 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8434B9D2285BA4040028A5D8 /* Note.storyboard */; };
+		8434B9D5285BA40E0028A5D8 /* NoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D4285BA40E0028A5D8 /* NoteContent.swift */; };
+		8434B9D7285BA41D0028A5D8 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D6285BA41D0028A5D8 /* NoteController.swift */; };
 		8438DC6C285BAF7400A67F49 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8438DC6B285BAF7400A67F49 /* SignUp.storyboard */; };
 		8438DC6E285BAFA000A67F49 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC6D285BAFA000A67F49 /* SignInViewController.swift */; };
 		8438DC70285BAFA700A67F49 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */; };
@@ -33,6 +40,13 @@
 		3BEC0B89285B91AF0030EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BEC0B8C285B91AF0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BEC0B8E285B91AF0030EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BEC0B94285B92120030EC25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8434B9D0285BA3F60028A5D8 /* DbHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbHandler.swift; sourceTree = "<group>"; };
+		8434B9D2285BA4040028A5D8 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
+		8434B9D4285BA40E0028A5D8 /* NoteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteContent.swift; sourceTree = "<group>"; };
+		8434B9D6285BA41D0028A5D8 /* NoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 		8438DC6B285BAF7400A67F49 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		8438DC6D285BAFA000A67F49 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +70,8 @@
 		3BEC0B71285B91AC0030EC25 = {
 			isa = PBXGroup;
 			children = (
+				8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */,
+				8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */,
 				8438DC75285BB02D00A67F49 /* User+CoreDataClass.swift */,
 				8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */,
 				3BEC0B7C285B91AC0030EC25 /* TakeItEasyProject */,
@@ -75,9 +91,13 @@
 			isa = PBXGroup;
 			children = (
 				3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */,
+				8434B9D0285BA3F60028A5D8 /* DbHandler.swift */,
+				8434B9D4285BA40E0028A5D8 /* NoteContent.swift */,
+				8434B9D6285BA41D0028A5D8 /* NoteController.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
 				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
 				3BEC0B83285B91AC0030EC25 /* Main.storyboard */,
+				8434B9D2285BA4040028A5D8 /* Note.storyboard */,
 				3BEC0B89285B91AF0030EC25 /* Assets.xcassets */,
 				3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */,
 				3BEC0B8E285B91AF0030EC25 /* Info.plist */,
@@ -149,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8434B9D3285BA4040028A5D8 /* Note.storyboard in Resources */,
 				3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */,
 				3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */,
 				8438DC6C285BAF7400A67F49 /* SignUp.storyboard in Resources */,
@@ -168,11 +189,16 @@
 				8438DC74285BAFB600A67F49 /* DBHelperUser.swift in Sources */,
 				8438DC72285BAFAF00A67F49 /* UsersName.swift in Sources */,
 				3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */,
+				8434B9CD285BA3DA0028A5D8 /* Journal+CoreDataClass.swift in Sources */,
+				8434B9D5285BA40E0028A5D8 /* NoteContent.swift in Sources */,
 				8438DC77285BB02D00A67F49 /* User+CoreDataClass.swift in Sources */,
 				3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */,
 				8438DC6E285BAFA000A67F49 /* SignInViewController.swift in Sources */,
 				8438DC78285BB02D00A67F49 /* User+CoreDataProperties.swift in Sources */,
 				3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */,
+				8434B9D1285BA3F70028A5D8 /* DbHandler.swift in Sources */,
+				8434B9CF285BA3E50028A5D8 /* Journal+CoreDataProperties.swift in Sources */,
+				8434B9D7285BA41D0028A5D8 /* NoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
