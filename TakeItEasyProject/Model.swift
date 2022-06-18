@@ -22,12 +22,12 @@ struct BookDetails: Codable{
     
     var title: String
     var authors: [String]
-    var publisher, publishedDate, description: String
+    var publisher, publishedDate, description: String?
    // var industryIdentifiers: [IndustryIdentifiers]
    // var readingModes: ReadingModes
-    var pageCount: Int
+    var pageCount: Int?
    // var printType: String
-    var categories: [String]
+    var categories: [String]?
     //var maturityRating: [String]
     var imageLinks: ImageLinks
     var previewLink: String
@@ -46,16 +46,4 @@ struct AccessInfo: Codable{
     var webReaderLink: String
 }
 
-class BookData{
-    var titles: [String] = []
-    var imageUrls: [String] = []
-    var previewUrls: [String] = []
-    var ids: [String] = []
-    
-    func resetData(){
-        titles = []
-        imageUrls = []
-        previewUrls = []
-        ids = []
-    }
-}
+

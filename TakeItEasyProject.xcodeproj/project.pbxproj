@@ -10,17 +10,23 @@
 		3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */; };
 		3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */; };
 		3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B81285B91AC0030EC25 /* ViewController.swift */; };
-		3BEC0B85285B91AC0030EC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B83285B91AC0030EC25 /* Main.storyboard */; };
 		3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */; };
 		3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B89285B91AF0030EC25 /* Assets.xcassets */; };
 		3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */; };
-		F7638BC8285C207C006F10C0 /* BookMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7638BC7285C207C006F10C0 /* BookMain.storyboard */; };
+		F7049646285D54B900014E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7049645285D54B900014E2E /* Main.storyboard */; };
+		F7638BC8285C207C006F10C0 /* Books.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7638BC7285C207C006F10C0 /* Books.storyboard */; };
 		F7638BCA285C21BF006F10C0 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BC9285C21BF006F10C0 /* BooksViewController.swift */; };
 		F7638BCC285C2297006F10C0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BCB285C2297006F10C0 /* Model.swift */; };
 		F7638BCE285C22CA006F10C0 /* BookWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BCD285C22CA006F10C0 /* BookWebViewController.swift */; };
 		F7638BD0285C2331006F10C0 /* GeneralBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BCF285C2331006F10C0 /* GeneralBookCollectionViewCell.swift */; };
 		F7638BD2285C2344006F10C0 /* TechBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BD1285C2344006F10C0 /* TechBookCollectionViewCell.swift */; };
 		F7638BD4285C235A006F10C0 /* CookBookCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BD3285C235A006F10C0 /* CookBookCollectionViewCell.swift */; };
+		F7638CA7285D0E51006F10C0 /* Tom Clancy Line of Sight.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F7638CA6285D0E51006F10C0 /* Tom Clancy Line of Sight.pdf */; };
+		F7638CA9285D0E58006F10C0 /* Goosebumps Night In The Woods.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F7638CA8285D0E58006F10C0 /* Goosebumps Night In The Woods.pdf */; };
+		F7638CAB285D0E70006F10C0 /* Knights.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F7638CAA285D0E70006F10C0 /* Knights.pdf */; };
+		F7638CAD285D0EA1006F10C0 /* Percy Jackson.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F7638CAC285D0EA1006F10C0 /* Percy Jackson.pdf */; };
+		F7638CB0285D105B006F10C0 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638CAF285D105B006F10C0 /* PDFViewController.swift */; };
+		F7638CB4285D1231006F10C0 /* PDFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638CB3285D1231006F10C0 /* PDFCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,18 +34,24 @@
 		3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B81285B91AC0030EC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BEC0B84285B91AC0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BEC0B87285B91AC0030EC25 /* TakeItEasyProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeItEasyProject.xcdatamodel; sourceTree = "<group>"; };
 		3BEC0B89285B91AF0030EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BEC0B8C285B91AF0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BEC0B8E285B91AF0030EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7638BC7285C207C006F10C0 /* BookMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookMain.storyboard; sourceTree = "<group>"; };
+		F7049645285D54B900014E2E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F7638BC7285C207C006F10C0 /* Books.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Books.storyboard; sourceTree = "<group>"; };
 		F7638BC9285C21BF006F10C0 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		F7638BCB285C2297006F10C0 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F7638BCD285C22CA006F10C0 /* BookWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookWebViewController.swift; sourceTree = "<group>"; };
 		F7638BCF285C2331006F10C0 /* GeneralBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralBookCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7638BD1285C2344006F10C0 /* TechBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechBookCollectionViewCell.swift; sourceTree = "<group>"; };
 		F7638BD3285C235A006F10C0 /* CookBookCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookBookCollectionViewCell.swift; sourceTree = "<group>"; };
+		F7638CA6285D0E51006F10C0 /* Tom Clancy Line of Sight.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Tom Clancy Line of Sight.pdf"; sourceTree = "<group>"; };
+		F7638CA8285D0E58006F10C0 /* Goosebumps Night In The Woods.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Goosebumps Night In The Woods.pdf"; sourceTree = "<group>"; };
+		F7638CAA285D0E70006F10C0 /* Knights.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Knights.pdf; sourceTree = "<group>"; };
+		F7638CAC285D0EA1006F10C0 /* Percy Jackson.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Percy Jackson.pdf"; sourceTree = "<group>"; };
+		F7638CAF285D105B006F10C0 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		F7638CB3285D1231006F10C0 /* PDFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,23 +84,45 @@
 		3BEC0B7C285B91AC0030EC25 /* TakeItEasyProject */ = {
 			isa = PBXGroup;
 			children = (
+				F7638CAE285D0ECB006F10C0 /* New Group */,
+				F7638CA5285D0E46006F10C0 /* Books */,
 				3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
 				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
-				3BEC0B83285B91AC0030EC25 /* Main.storyboard */,
 				3BEC0B89285B91AF0030EC25 /* Assets.xcassets */,
 				3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */,
 				3BEC0B8E285B91AF0030EC25 /* Info.plist */,
 				3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */,
-				F7638BC7285C207C006F10C0 /* BookMain.storyboard */,
+				F7638BC7285C207C006F10C0 /* Books.storyboard */,
 				F7638BC9285C21BF006F10C0 /* BooksViewController.swift */,
 				F7638BCB285C2297006F10C0 /* Model.swift */,
 				F7638BCD285C22CA006F10C0 /* BookWebViewController.swift */,
 				F7638BCF285C2331006F10C0 /* GeneralBookCollectionViewCell.swift */,
 				F7638BD1285C2344006F10C0 /* TechBookCollectionViewCell.swift */,
 				F7638BD3285C235A006F10C0 /* CookBookCollectionViewCell.swift */,
+				F7638CAF285D105B006F10C0 /* PDFViewController.swift */,
+				F7638CB3285D1231006F10C0 /* PDFCollectionViewCell.swift */,
+				F7049645285D54B900014E2E /* Main.storyboard */,
 			);
 			path = TakeItEasyProject;
+			sourceTree = "<group>";
+		};
+		F7638CA5285D0E46006F10C0 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				F7638CA6285D0E51006F10C0 /* Tom Clancy Line of Sight.pdf */,
+				F7638CA8285D0E58006F10C0 /* Goosebumps Night In The Woods.pdf */,
+				F7638CAA285D0E70006F10C0 /* Knights.pdf */,
+				F7638CAC285D0EA1006F10C0 /* Percy Jackson.pdf */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		F7638CAE285D0ECB006F10C0 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +184,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */,
+				F7638CA9285D0E58006F10C0 /* Goosebumps Night In The Woods.pdf in Resources */,
+				F7638CAB285D0E70006F10C0 /* Knights.pdf in Resources */,
+				F7049646285D54B900014E2E /* Main.storyboard in Resources */,
 				3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */,
-				F7638BC8285C207C006F10C0 /* BookMain.storyboard in Resources */,
-				3BEC0B85285B91AC0030EC25 /* Main.storyboard in Resources */,
+				F7638BC8285C207C006F10C0 /* Books.storyboard in Resources */,
+				F7638CAD285D0EA1006F10C0 /* Percy Jackson.pdf in Resources */,
+				F7638CA7285D0E51006F10C0 /* Tom Clancy Line of Sight.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,11 +202,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7638BD4285C235A006F10C0 /* CookBookCollectionViewCell.swift in Sources */,
+				F7638CB0285D105B006F10C0 /* PDFViewController.swift in Sources */,
 				F7638BCA285C21BF006F10C0 /* BooksViewController.swift in Sources */,
 				3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */,
 				3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */,
 				F7638BCC285C2297006F10C0 /* Model.swift in Sources */,
 				3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */,
+				F7638CB4285D1231006F10C0 /* PDFCollectionViewCell.swift in Sources */,
 				F7638BCE285C22CA006F10C0 /* BookWebViewController.swift in Sources */,
 				F7638BD2285C2344006F10C0 /* TechBookCollectionViewCell.swift in Sources */,
 				F7638BD0285C2331006F10C0 /* GeneralBookCollectionViewCell.swift in Sources */,
@@ -179,14 +219,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3BEC0B83285B91AC0030EC25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BEC0B84285B91AC0030EC25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

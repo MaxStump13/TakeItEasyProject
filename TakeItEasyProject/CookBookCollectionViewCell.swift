@@ -8,6 +8,7 @@
 import UIKit
 
 class CookBookCollectionViewCell: UICollectionViewCell {
+   
     @IBOutlet weak var nameC: UILabel!
     
     @IBOutlet weak var ImageBackground: UIImageView!
