@@ -3,6 +3,7 @@
 //  TakeItEasy
 //
 //  Created by Zachary Saffron on 6/8/22.
+//  Design by Jacob Digby
 //
 
 import UIKit
@@ -10,6 +11,13 @@ import CoreData
 
 class SignInViewController: UIViewController {
 
+    //design class
+    var topColor = UIColor(red: 0.17, green: 1.00, blue: 0.58, alpha: 1.0)
+    var bottomColor = UIColor(red: 0.17, green: 0.52, blue: 1.00, alpha: 1.0)
+    var accent = UIColor(red: 1.00, green: 0.44, blue: 0.07, alpha: 1.00)
+    
+    var front: Design?
+    
     // All connections used for SignInViewController
 
     @IBOutlet weak var enterEmailTextField: UITextField!
@@ -22,13 +30,16 @@ class SignInViewController: UIViewController {
     let userDef = UserDefaults.standard
     let switchStatus = UserDefaults.standard
     
-    
     // This function checks if rememberMe switch is on
     // Saves the data and calls it to the email and password text fields
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //front end design elements
+        front = Design(color1: topColor, color2: bottomColor, color3: accent)
+        view.layer.insertSublayer((front?.gradient(boundary: view))!, at: 0)
+        
         if(switchStatus.bool(forKey: "switch")){
             remSwitch.setOn(true, animated: true)
             let req : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userDef.value(forKey: "UN") as! String, kSecReturnAttributes as String : true, kSecReturnData as String : true]

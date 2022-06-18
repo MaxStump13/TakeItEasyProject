@@ -27,6 +27,7 @@
 		8438DC77285BB02D00A67F49 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC75285BB02D00A67F49 /* User+CoreDataClass.swift */; };
 		8438DC78285BB02D00A67F49 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */; };
 		84574704285C2A78003D295C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84574703285C2A78003D295C /* SearchController.swift */; };
+		84574720285E7255003D295C /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457471F285E7255003D295C /* Design.swift */; };
 		F7049646285D54B900014E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7049645285D54B900014E2E /* Main.storyboard */; };
 		F7638BC8285C207C006F10C0 /* Books.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7638BC7285C207C006F10C0 /* Books.storyboard */; };
 		F7638BCA285C21BF006F10C0 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BC9285C21BF006F10C0 /* BooksViewController.swift */; };
@@ -66,6 +67,7 @@
 		8438DC75285BB02D00A67F49 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		84574703285C2A78003D295C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		8457471F285E7255003D295C /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
 		F7049645285D54B900014E2E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F7638BC7285C207C006F10C0 /* Books.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Books.storyboard; sourceTree = "<group>"; };
 		F7638BC9285C21BF006F10C0 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
@@ -116,36 +118,69 @@
 		3BEC0B7C285B91AC0030EC25 /* TakeItEasyProject */ = {
 			isa = PBXGroup;
 			children = (
+				84574744285E974C003D295C /* Cell */,
+				84574743285E9712003D295C /* Database */,
+				84574742285E9693003D295C /* storyboards */,
+				84574741285E9643003D295C /* Controllers */,
 				F7638CA5285D0E46006F10C0 /* Books */,
 				3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */,
-				8434B9D0285BA3F60028A5D8 /* DbHandler.swift */,
 				8434B9D4285BA40E0028A5D8 /* NoteContent.swift */,
-				8434B9D6285BA41D0028A5D8 /* NoteController.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
-				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
-				84574703285C2A78003D295C /* SearchController.swift */,
-				8438DC6D285BAFA000A67F49 /* SignInViewController.swift */,
-				8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */,
+				8457471F285E7255003D295C /* Design.swift */,
 				8438DC71285BAFAF00A67F49 /* UsersName.swift */,
-				8438DC73285BAFB600A67F49 /* DBHelperUser.swift */,
-				F7638BC9285C21BF006F10C0 /* BooksViewController.swift */,
 				F7638BCB285C2297006F10C0 /* Model.swift */,
-				F7638BCD285C22CA006F10C0 /* BookWebViewController.swift */,
-				F7638BCF285C2331006F10C0 /* GeneralBookCollectionViewCell.swift */,
-				F7638BD1285C2344006F10C0 /* TechBookCollectionViewCell.swift */,
-				F7638BD3285C235A006F10C0 /* CookBookCollectionViewCell.swift */,
-				F7638CAF285D105B006F10C0 /* PDFViewController.swift */,
-				F7638CB3285D1231006F10C0 /* PDFCollectionViewCell.swift */,
-				8438DC6B285BAF7400A67F49 /* SignUp.storyboard */,
-				8434B9D2285BA4040028A5D8 /* Note.storyboard */,
-				F7049645285D54B900014E2E /* Main.storyboard */,
-				F7638BC7285C207C006F10C0 /* Books.storyboard */,
 				3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */,
 				3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */,
 				3BEC0B8E285B91AF0030EC25 /* Info.plist */,
 				3BEC0B89285B91AF0030EC25 /* Assets.xcassets */,
 			);
 			path = TakeItEasyProject;
+			sourceTree = "<group>";
+		};
+		84574741285E9643003D295C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8438DC6D285BAFA000A67F49 /* SignInViewController.swift */,
+				8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */,
+				84574703285C2A78003D295C /* SearchController.swift */,
+				F7638BC9285C21BF006F10C0 /* BooksViewController.swift */,
+				F7638BCD285C22CA006F10C0 /* BookWebViewController.swift */,
+				8434B9D6285BA41D0028A5D8 /* NoteController.swift */,
+				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
+				F7638CAF285D105B006F10C0 /* PDFViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84574742285E9693003D295C /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8438DC6B285BAF7400A67F49 /* SignUp.storyboard */,
+				8434B9D2285BA4040028A5D8 /* Note.storyboard */,
+				F7049645285D54B900014E2E /* Main.storyboard */,
+				F7638BC7285C207C006F10C0 /* Books.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		84574743285E9712003D295C /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8434B9D0285BA3F60028A5D8 /* DbHandler.swift */,
+				8438DC73285BAFB600A67F49 /* DBHelperUser.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		84574744285E974C003D295C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F7638BCF285C2331006F10C0 /* GeneralBookCollectionViewCell.swift */,
+				F7638BD1285C2344006F10C0 /* TechBookCollectionViewCell.swift */,
+				F7638BD3285C235A006F10C0 /* CookBookCollectionViewCell.swift */,
+				F7638CB3285D1231006F10C0 /* PDFCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F7638CA5285D0E46006F10C0 /* Books */ = {
@@ -246,6 +281,7 @@
 				8438DC72285BAFAF00A67F49 /* UsersName.swift in Sources */,
 				3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */,
 				F7638BCC285C2297006F10C0 /* Model.swift in Sources */,
+				84574720285E7255003D295C /* Design.swift in Sources */,
 				F7638CB4285D1231006F10C0 /* PDFCollectionViewCell.swift in Sources */,
 				F7638BCE285C22CA006F10C0 /* BookWebViewController.swift in Sources */,
 				F7638BD2285C2344006F10C0 /* TechBookCollectionViewCell.swift in Sources */,
