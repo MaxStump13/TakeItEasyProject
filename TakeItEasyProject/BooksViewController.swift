@@ -2,19 +2,18 @@ import UIKit
 
 class BooksViewController: UIViewController, UICollectionViewDataSource,UICollectionViewDelegate,UISearchBarDelegate{
     
-    
-    
-    
     var offline = ["Knights", "Percy Jackson", "Tom Clancy Line of Sight", "Goosebumps Night In The Woods"]
     var coverImg = ["Knights","luffy","jets","history"]
-  
+    var GeneralBooks:[Books] = []
+    var TechBooks:[Books] = []
+    var CookBooks:[Books] = []
+    var searchTerms: String?
     
- 
+    @IBOutlet weak var GeneralBooksCollection: UICollectionView!
+    @IBOutlet weak var TechBooksCollection: UICollectionView!
+    @IBOutlet weak var CookBooksCollection: UICollectionView!
+    @IBOutlet weak var SearchBar: UISearchBar!
     
-    
-    
-  
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == GeneralBooksCollection {
             return filteredGeneralBooks.count
@@ -31,7 +30,6 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCell", for: indexPath) as! GeneralBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true
-       
             bookCell.backgroundColor = .yellow
             bookCell.nameA.text = filteredGeneralBooks[indexPath.row].volumeInfo.title
             if let imageUrl = URL(string: filteredGeneralBooks[indexPath.row].volumeInfo.imageLinks.thumbnail),
@@ -41,16 +39,13 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
                         bookCell.ImageBackground.image = image
                     }
                 }
-
             }
        
-
             return bookCell
         } else if collectionView == TechBooksCollection {
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TechCell", for: indexPath) as! TechBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true
-       
             bookCell.backgroundColor = .yellow
             bookCell.nameB.text = filteredTechBooks[indexPath.row].volumeInfo.title
             if let imageUrl = URL(string: filteredTechBooks[indexPath.row].volumeInfo.imageLinks.thumbnail),
@@ -60,16 +55,13 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
                         bookCell.ImageBackground.image = image
                     }
                 }
-
             }
-       
 
             return bookCell
         } else if collectionView == CookBooksCollection {
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CookCell", for: indexPath) as! CookBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true
-       
             bookCell.backgroundColor = .yellow
             bookCell.nameC.text = filteredCookBooks[indexPath.row].volumeInfo.title
             if let imageUrl = URL(string: filteredCookBooks[indexPath.row].volumeInfo.imageLinks.thumbnail),
@@ -79,21 +71,13 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
                         bookCell.ImageBackground.image = image
                     }
                 }
-
             }
-       
-
             return bookCell
         }
       
         print("There was an error: didn't find a match for the collection view")
         return collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCell", for: indexPath) as! GeneralBookCollectionViewCell
     }
-    
-
-     
-    
-    
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
@@ -107,16 +91,11 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
         } else if collectionView == CookBooksCollection {
             bookWebController.bookName = filteredCookBooks[indexPath.row].volumeInfo.previewLink
         }
-        
 
         navigationController?.pushViewController(bookWebController, animated: true)
-        
-        
 
     }
-    
-    
-    
+
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         searchTerms = searchText != "" ? searchText: nil
         DispatchQueue.main.async {
@@ -124,15 +103,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             self.CookBooksCollection.reloadData()
             self.TechBooksCollection.reloadData()
         }
-        
     }
-    
-    
-    
-    var GeneralBooks:[Books] = []
-    var TechBooks:[Books] = []
-    var CookBooks:[Books] = []
-    var searchTerms: String?
     
     var filteredGeneralBooks: [Books]{
         if let searchTerms = searchTerms {
@@ -156,23 +127,8 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
         }
     }
     
-    
-    
-    @IBOutlet weak var GeneralBooksCollection: UICollectionView!
-    
-    @IBOutlet weak var TechBooksCollection: UICollectionView!
-    
-    @IBOutlet weak var CookBooksCollection: UICollectionView!
-    
-    @IBOutlet weak var SearchBar: UISearchBar!
-    
-   
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Cook books
         fetchBooks(urlString: "https://www.googleapis.com/books/v1/volumes?&q=cookpdf&key=AIzaSyDFPkdgwDotfduJ8MH-QR128RNdMn-Wo24") { books in
             self.CookBooks = books
@@ -194,27 +150,11 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
                self.GeneralBooksCollection.reloadData()
             }
         }
-        
-        
-
-
-        
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        self.GeneralBooksCollection.reloadData()
-//        self.TechBooksCollection.reloadData()
-//        self.CookBooksCollection.reloadData()
-//    }
-    
-
     func fetchBooks(urlString: String, booksCompletionHandler: @escaping(_ books:[Books]) -> ()){
       //  let urlString = "https://www.googleapis.com/books/v1/volumes?q=cookpdf&key=AIzaSyDFPkdgwDotfduJ8MH-QR128RNdMn-Wo24"
-
         let fetchURL = URL(string: urlString)
-
-
-
         guard fetchURL != nil else{
             print("Error  fetching books Url")
             return
@@ -227,14 +167,10 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             }
             do{
                 let decodedBooks = try JSONDecoder().decode(BooksAPi.self, from: data)
-                
                 var books:[Books] = []
                 for book in decodedBooks.items{
-
                     if !book.volumeInfo.previewLink.isEmpty{
-
                         books.append(book)
-
                     }
                 }
                 // hand the books that we decoded back to the calling code
@@ -242,16 +178,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             }catch let e as Error{
                 print("Error decoding the books \(e)")
             }
-
-
         }
         bookDataTask.resume()
-
-
     }
-
-
 }
-
-
-
