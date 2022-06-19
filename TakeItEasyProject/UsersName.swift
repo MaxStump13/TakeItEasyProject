@@ -6,20 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
 class CurrentUser {
     
     // Create a static var for our current user
     
     static var currentUser = CurrentUser()
-    
+    var name: String?
     
     // This private init is to ensure that the output cant be changed
     
-    private init() {
-        
+    func out(current: UIViewController){
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "Main")
+            loginNextScreen.modalPresentationStyle = .fullScreen
+            current.present(loginNextScreen, animated: true, completion: nil)
     }
-    
-    var name: String?
     
 }

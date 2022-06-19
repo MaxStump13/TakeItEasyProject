@@ -16,10 +16,6 @@ class SearchController: UIViewController {
         // Design Elements
         let front = Design()
         view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
-        
-    }
-    
-    @IBAction func openGoogle(_ sender: Any){
         let webKitView = WKWebView()
         let newUrl = URL(string: "https://www.google.com")
         

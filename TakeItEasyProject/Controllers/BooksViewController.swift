@@ -13,6 +13,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
     @IBOutlet weak var TechBooksCollection: UICollectionView!
     @IBOutlet weak var CookBooksCollection: UICollectionView!
     @IBOutlet weak var SearchBar: UISearchBar!
+    @IBOutlet weak var user: UILabel!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == GeneralBooksCollection {
@@ -130,6 +131,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
     override func viewDidLoad() {
         super.viewDidLoad()
         //Design Elements
+        user.text = CurrentUser.currentUser.name
         let front = Design()
         view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
         
@@ -185,4 +187,10 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
         }
         bookDataTask.resume()
     }
+    
+    @IBAction func logout(_ sender: Any) {
+        CurrentUser.currentUser.out(current: self)
+        print("click")
+    }
+    
 }
