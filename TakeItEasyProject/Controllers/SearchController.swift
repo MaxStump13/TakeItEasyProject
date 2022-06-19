@@ -13,7 +13,10 @@ class SearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Design Elements
+        let front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
+        
     }
     
     @IBAction func openGoogle(_ sender: Any){

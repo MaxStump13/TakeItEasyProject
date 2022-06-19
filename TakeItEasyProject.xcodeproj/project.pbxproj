@@ -124,7 +124,6 @@
 				84574741285E9643003D295C /* Controllers */,
 				F7638CA5285D0E46006F10C0 /* Books */,
 				3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */,
-				8434B9D4285BA40E0028A5D8 /* NoteContent.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
 				8457471F285E7255003D295C /* Design.swift */,
 				8438DC71285BAFAF00A67F49 /* UsersName.swift */,
@@ -140,6 +139,7 @@
 		84574741285E9643003D295C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8434B9D4285BA40E0028A5D8 /* NoteContent.swift */,
 				8438DC6D285BAFA000A67F49 /* SignInViewController.swift */,
 				8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */,
 				84574703285C2A78003D295C /* SearchController.swift */,

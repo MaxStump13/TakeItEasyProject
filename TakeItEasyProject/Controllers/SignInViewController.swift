@@ -37,25 +37,47 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
         
         //front end design elements
-        front = Design(color1: topColor, color2: bottomColor, color3: accent)
+        front = Design()
         view.layer.insertSublayer((front?.gradient(boundary: view))!, at: 0)
         
-        if(switchStatus.bool(forKey: "switch")){
-            remSwitch.setOn(true, animated: true)
-            let req : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userDef.value(forKey: "UN") as! String, kSecReturnAttributes as String : true, kSecReturnData as String : true]
-            var res : CFTypeRef?
-            if(SecItemCopyMatching(req as CFDictionary, &res) == noErr){
-                let data = res as? [String : Any]
-                let uID = data![kSecAttrAccount as String] as? String
-                let passData = (data![kSecValueData as String] as? Data)!
-                let pass = String(data : passData, encoding: .utf8)
-                enterEmailTextField.text = uID
-                enterPasswordTextField.text = pass
-
-            }else{
-                print("error calling remember me data")
-            }
-
+//        if(switchStatus.bool(forKey: "switch")){
+//            remSwitch.setOn(true, animated: true)
+//            let req : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userDef.value(forKey: "UN") as! String, kSecReturnAttributes as String : true, kSecReturnData as String : true]
+//            var res : CFTypeRef?
+//            if(SecItemCopyMatching(req as CFDictionary, &res) == noErr){
+//                let data = res as? [String : Any]
+//                let uID = data![kSecAttrAccount as String] as? String
+//                let passData = (data![kSecValueData as String] as? Data)!
+//                let pass = String(data : passData, encoding: .utf8)
+//                enterEmailTextField.text = uID
+//                enterPasswordTextField.text = pass
+//
+//            }else{
+//                print("error calling remember me data")
+//            }
+//
+//        }else{
+//            remSwitch.setOn(false, animated: true)
+//        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+            if(switchStatus.bool(forKey: "switch")){
+                   remSwitch.setOn(true, animated: true)
+                let req : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userDef.value(forKey: "UN") as! String, kSecReturnAttributes as String : true, kSecReturnData as String : true]
+                var res : CFTypeRef?
+                if(SecItemCopyMatching(req as CFDictionary, &res) == noErr){
+                    let data = res as? [String : Any]
+                    let uID = data![kSecAttrAccount as String] as? String
+                    let passData = (data![kSecValueData as String] as? Data)!
+                    let pass = String(data : passData, encoding: .utf8)
+                        enterEmailTextField.text = uID
+                        enterPasswordTextField.text = pass
+        
+                }else{
+                    print("error calling remember me data")
+                }
+        
         }else{
             remSwitch.setOn(false, animated: true)
         }

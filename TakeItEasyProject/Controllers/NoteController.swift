@@ -87,6 +87,11 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Design Elements
+        let front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
+        
     }
 
     //creates new cell entry on button click
