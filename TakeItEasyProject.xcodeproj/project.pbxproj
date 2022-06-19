@@ -18,6 +18,7 @@
 		70A2574D285B98F90000A0ED /* iTunesConn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2574C285B98F90000A0ED /* iTunesConn.swift */; };
 		70A2574F285B9E3C0000A0ED /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2574E285B9E3C0000A0ED /* MusicViewController.swift */; };
 		70A25751285B9E8B0000A0ED /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A25750285B9E8B0000A0ED /* MusicCollectionViewCell.swift */; };
+		70A2575F285F15200000A0ED /* musicSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2575E285F15200000A0ED /* musicSegueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		70A2574C285B98F90000A0ED /* iTunesConn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesConn.swift; sourceTree = "<group>"; };
 		70A2574E285B9E3C0000A0ED /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		70A25750285B9E8B0000A0ED /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		70A2575E285F15200000A0ED /* musicSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicSegueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				3BEC0B94285B92120030EC25 /* SearchViewController.swift */,
 				70A2574E285B9E3C0000A0ED /* MusicViewController.swift */,
 				70A25750285B9E8B0000A0ED /* MusicCollectionViewCell.swift */,
+				70A2575E285F15200000A0ED /* musicSegueViewController.swift */,
 			);
 			path = TakeItEasyProject;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 				3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */,
 				3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */,
 				70A2574D285B98F90000A0ED /* iTunesConn.swift in Sources */,
+				70A2575F285F15200000A0ED /* musicSegueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
