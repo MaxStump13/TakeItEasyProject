@@ -46,7 +46,7 @@ class QuestionViewController: UIViewController, UICollectionViewDelegate, UIColl
         insertResultsData(name: quiz!.name, score: score.scorePercentage(), date: getDate())
         
         // create the alert
-        let alert = UIAlertController(title: "Quiz Results", message: "You scored \(score.scorePercentage())", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title: "Quiz Results", message: "You scored \(score.scorePercentage())%", preferredStyle: UIAlertController.Style.alert)
 
         // add an action (button)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
