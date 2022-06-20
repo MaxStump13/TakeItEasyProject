@@ -9,7 +9,9 @@ import Foundation
 import UIKit
 
 let quizData = [
-QuizDB(id: 0, name: "Math", image: "1"),
-QuizDB(id: 1, name: "Test", image: "1"),
-QuizDB(id: 2, name: "Test2", image: "1")
+QuizDB(id: 0, name: "Addition", image: "1"),
+QuizDB(id: 1, name: "Subtraction", image: "1"),
+QuizDB(id: 2, name: "Multiplication", image: "1"),
+QuizDB(id: 3, name: "Division", image: "1")
+
 ]

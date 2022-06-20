@@ -37,19 +37,19 @@ class QuestionCollectionViewCell: UICollectionViewCell {
     
     @IBAction func choose1(_ sender: Any){
         question.userChoice(ans: question.choices[0])
-        answerLabel.text = question.selection?.ch
+        answerLabel.text = question.selection.ch
     }
     @IBAction func choose2(_ sender: Any){
         question.userChoice(ans: question.choices[1])
-        answerLabel.text = question.selection?.ch
+        answerLabel.text = question.selection.ch
     }
     @IBAction func choose3(_ sender: Any){
         question.userChoice(ans: question.choices[2])
-        answerLabel.text = question.selection?.ch
+        answerLabel.text = question.selection.ch
     }
     @IBAction func choose4(_ sender: Any){
         question.userChoice(ans: question.choices[3])
-        answerLabel.text = question.selection?.ch
+        answerLabel.text = question.selection.ch
     }
     
 }

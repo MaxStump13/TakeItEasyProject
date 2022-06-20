@@ -23,7 +23,7 @@ class Quiz {
 //        need to add 3 more Quizzes with 5 Qs
         
         return [
-            Quiz(name: "Math", image : UIImage(named: "1")!, calcs: Calcs(questions: [
+            Quiz(name: "Addition", image : UIImage(named: "1")!, calcs: Calcs(questions: [
                 Question(question: "5+2", choices: [
                     Choice(ch: "7"),
                     Choice(ch: "10"),
@@ -34,63 +34,143 @@ class Quiz {
                 Question(question: "5+1", choices: [
                     Choice(ch: "7"),
                     Choice(ch: "10"),
-                    Choice(ch: "2"),
+                    Choice(ch: "6"),
                     Choice(ch: "5"),
                     ],
-                         correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                         correctAns: Choice(ch: "6"), image: UIImage(named: "1")!),
                 Question(question: "5+5", choices: [
                     Choice(ch: "7"),
                     Choice(ch: "10"),
                     Choice(ch: "2"),
                     Choice(ch: "5"),
                     ],
-                    correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                    correctAns: Choice(ch: "10"), image: UIImage(named: "1")!),
+                Question(question: "5+10", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "15"),
+                    ],
+                    correctAns: Choice(ch: "15"), image: UIImage(named: "1")!),
+                Question(question: "1+1", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                    correctAns: Choice(ch: "2"), image: UIImage(named: "1")!),
+                
                 ])),
-            Quiz(name: "Test", image : UIImage(named: "1")!, calcs: Calcs(questions: [
-                Question(question: "5+6", choices: [
+            Quiz(name: "Subtraction", image : UIImage(named: "1")!, calcs: Calcs(questions: [
+                Question(question: "6-5", choices: [
+                    Choice(ch: "1"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                         correctAns: Choice(ch: "1"), image: UIImage(named: "1")!),
+                Question(question: "8-5", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "3"),
+                    Choice(ch: "5"),
+                    ],
+                    correctAns: Choice(ch: "3"), image: UIImage(named: "1")!),
+                Question(question: "5-0", choices: [
                     Choice(ch: "7"),
                     Choice(ch: "10"),
                     Choice(ch: "2"),
                     Choice(ch: "5"),
                     ],
-                         correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
-                Question(question: "5+8", choices: [
+                    correctAns: Choice(ch: "5"), image: UIImage(named: "1")!),
+                Question(question: "15-5", choices: [
                     Choice(ch: "7"),
                     Choice(ch: "10"),
-                    Choice(ch: "2"),
+                    Choice(ch: "3"),
                     Choice(ch: "5"),
                     ],
-                    correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
-                Question(question: "5+0", choices: [
-                    Choice(ch: "7"),
+                    correctAns: Choice(ch: "10"), image: UIImage(named: "1")!),
+                Question(question: "7-5", choices: [
+                    Choice(ch: "2"),
                     Choice(ch: "10"),
-                    Choice(ch: "2"),
+                    Choice(ch: "3"),
                     Choice(ch: "5"),
                     ],
-                    correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                    correctAns: Choice(ch: "2"), image: UIImage(named: "1")!),
                 ])),
-            Quiz(name: "Test2", image : UIImage(named: "1")!, calcs : Calcs(questions: [
-            Question(question: "5+18", choices: [
+            Quiz(name: "Multiplication", image : UIImage(named: "1")!, calcs : Calcs(questions: [
+            Question(question: "2*2", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "4"),
+                Choice(ch: "5"),
+                ],
+                     correctAns: Choice(ch: "4"), image: UIImage(named: "1")!),
+            Question(question: "7*2", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "14"),
+                Choice(ch: "5"),
+                ],
+                     correctAns: Choice(ch: "14"), image: UIImage(named: "1")!),
+            Question(question: "5*2", choices: [
                 Choice(ch: "7"),
                 Choice(ch: "10"),
                 Choice(ch: "2"),
                 Choice(ch: "5"),
                 ],
-                     correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
-            Question(question: "5+90", choices: [
+                correctAns: Choice(ch: "10"), image: UIImage(named: "1")!),
+            Question(question: "2*6", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "12"),
+                Choice(ch: "5"),
+                ],
+                     correctAns: Choice(ch: "12"), image: UIImage(named: "1")!),
+            Question(question: "5*5", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "25"),
+                Choice(ch: "5"),
+                ],
+                correctAns: Choice(ch: "25"), image: UIImage(named: "1")!),
+            ])),
+            Quiz(name: "Division", image : UIImage(named: "1")!, calcs : Calcs(questions: [
+            Question(question: "10/2", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "2"),
+                Choice(ch: "5"),
+                ],
+                     correctAns: Choice(ch: "5"), image: UIImage(named: "1")!),
+            Question(question: "20/4", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "2"),
+                Choice(ch: "5"),
+                ],
+                correctAns: Choice(ch: "5"), image: UIImage(named: "1")!),
+            Question(question: "21/3", choices: [
                 Choice(ch: "7"),
                 Choice(ch: "10"),
                 Choice(ch: "2"),
                 Choice(ch: "5"),
                 ],
                 correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
-            Question(question: "5+33", choices: [
+            Question(question: "6/3", choices: [
                 Choice(ch: "7"),
                 Choice(ch: "10"),
                 Choice(ch: "2"),
                 Choice(ch: "5"),
                 ],
-                correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                correctAns: Choice(ch: "2"), image: UIImage(named: "1")!),
+            Question(question: "7/7", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "1"),
+                Choice(ch: "2"),
+                Choice(ch: "5"),
+                ],
+                correctAns: Choice(ch: "1"), image: UIImage(named: "1")!),
             ]))
         ]
         
@@ -102,7 +182,7 @@ class Question {
     var question : String
     var choices : [Choice]
     var correctAns : Choice
-    var selection : Choice?
+    var selection = Choice(ch: "")
     var image : UIImage
     
     init(question: String, choices: [Choice], correctAns : Choice, image: UIImage){
@@ -114,7 +194,7 @@ class Question {
     }
     
     func userChoice(ans : Choice){
-        selection!.ch = ans.ch
+        selection.ch = ans.ch
     }
     
 }

@@ -12,7 +12,7 @@ class QuestionViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     @IBOutlet weak var questionCollection : UICollectionView!
     @IBOutlet weak var titleLabel : UILabel!
-    
+    var a : Int?
     var quiz : Quiz?
     let score = Score()
     
@@ -22,8 +22,9 @@ class QuestionViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = questionCollection.dequeueReusableCell(withReuseIdentifier: "questionCell", for: indexPath) as! QuestionCollectionViewCell
+        
         cell.question = quiz?.calcs.questions[indexPath.row]
-        cell.answerLabel.text = (quiz?.calcs.questions[indexPath.row])!.selection?.ch
+        cell.answerLabel.text = (quiz?.calcs.questions[indexPath.row])!.selection.ch
         return cell
     }
     
@@ -35,13 +36,26 @@ class QuestionViewController: UIViewController, UICollectionViewDelegate, UIColl
 
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func submit(_ sender: Any){
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+    @IBAction func submit(_ sender: UIButton){
         let result = score.resultToString(quizRes: quiz!)
         
         insertResultsData(name: quiz!.name, score: score.scorePercentage(), date: getDate())
         
+        // create the alert
+        let alert = UIAlertController(title: "Quiz Results", message: "You scored \(score.scorePercentage())%", preferredStyle: UIAlertController.Style.alert)
+
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
+        
+}
     
 
     /*
@@ -54,4 +68,4 @@ class QuestionViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     */
 
-}
+

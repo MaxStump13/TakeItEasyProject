@@ -26,6 +26,7 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = collView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! QuizCollectionViewCell
         cell.quiz = quizDB![indexPath.row]
+        cell.resLab.text = String(QuizLabelRes.qLabel.qresL[indexPath.row])
         print(cell.quiz.name)
         print(cell.quiz.image)
         
@@ -38,24 +39,30 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
         print("Selected cell")
         let questionViewCont = storyboard?.instantiateViewController(withIdentifier: "QuestionsVC") as! QuestionViewController
         questionViewCont.quiz = quizzes[indexPath.row]
+        QuizLabelRes.qLabel.id = indexPath.row
         present(questionViewCont, animated: true, completion: nil)
+        
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
 
+    @IBOutlet weak var username: UILabel!
+    @IBAction func refresh(_ sender: Any) {
+        collView.reloadData()
+    }
+    @IBAction func logout(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         collView.dataSource = self
         collView.delegate = self
         
         initializeSQLite()
-//        SQLiteDB.sqlObj.insertAllData(quizData: [QuizDB])
+        insertAllData()
         quizDB = SQLite.sqlObj.getData()
-        
-        print(quizDB)
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
