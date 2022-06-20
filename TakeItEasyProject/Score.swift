@@ -8,31 +8,30 @@
 import Foundation
 
 class Score{
+    let max : Double = 5
     var score : Double = 0
-    var possibleScore : Double = 5
 
-    func getScore(submittedQuiz: Quiz) -> (Int, Int) {
-            print("Quiz submitted")
-            getScoreHelper(submittedQuiz: submittedQuiz)
-            return (score: Int(score), total: Int(possibleScore))
+        func getScore(quizRes : Quiz) -> (Int, Int){
+            getScoreCalc(quizRes: quizRes)
+            return (score : Int(score), maxScore : Int(max))
         }
         
-        private func getScoreHelper(submittedQuiz: Quiz) {
-            for x in submittedQuiz.options.qs {
-                if (x.correctAns.selection == x.selection.selection) {
+        private func getScoreCalc(quizRes : Quiz){
+            for x in quizRes.calcs.questions {
+                if (x.correctAns.ch == x.selection!.ch){
                     score = score + 1
                 }
             }
         }
         
-        func percentageScore() -> Int {
-            let result : Double = (score / possibleScore) * 100
+        func scorePercentage() -> Int {
+            let result : Double = (score / max) * 100
             return Int(result)
         }
+        func resultToString(quizRes : Quiz) -> String {
+            getScoreCalc(quizRes: quizRes)
+            let str = "Final Score \(Int(score)) out of a total \(Int(max))"
+            return str
+        }
         
-        func formatToString(submittedQuiz: Quiz) -> String {
-            getScoreHelper(submittedQuiz: submittedQuiz)
-            let toString = "You scored \(Int(score)) out of \(Int(possibleScore))"
-            print(toString)
-            return toString
-        }}
+    }

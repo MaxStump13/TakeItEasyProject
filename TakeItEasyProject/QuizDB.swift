@@ -10,10 +10,12 @@ import UIKit
 class QuizDB{
     var id : Int
     var name : String
+    var image : String
     
-    init(id : Int, name : String){
+    init(id : Int, name : String, image : String){
         self.id = id
         self.name = name
+        self.image = image
         
     }
 }

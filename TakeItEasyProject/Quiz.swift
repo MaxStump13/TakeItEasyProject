@@ -9,88 +9,127 @@ import Foundation
 import UIKit
 
 class Quiz {
-    
     var name : String
-    var options : Options
+    var image : UIImage
+    var calcs : Calcs
     
-    init(name : String, options : Options){
+    init(name : String, image : UIImage, calcs : Calcs){
         self.name = name
-        self.options = options
+        self.image = image
+        self.calcs = calcs
     }
     
     static func getQuizzes() -> [Quiz]{
+//        need to add 3 more Quizzes with 5 Qs
+        
         return [
-            Quiz(name: "Math", options: Options(qs: [
-                Question(question: "5+2", answers: [
-                    Answer(selection: "7"),
-                    Answer(selection: "10"),
-                    Answer(selection: "2"),
-                    Answer(selection: "5"),
+            Quiz(name: "Math", image : UIImage(named: "1")!, calcs: Calcs(questions: [
+                Question(question: "5+2", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
                     ],
-                    correctAns: Answer(selection: "7")),
-                Question(question: "4 x 4", answers: [
-                    Answer(selection: "3"),
-                    Answer(selection: "1"),
-                    Answer(selection: "16"),
-                    Answer(selection: "25"),
+                         correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                Question(question: "5+1", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                         correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                Question(question: "5+5", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                    correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                ])),
+            Quiz(name: "Test", image : UIImage(named: "1")!, calcs: Calcs(questions: [
+                Question(question: "5+6", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                         correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                Question(question: "5+8", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                    correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                Question(question: "5+0", choices: [
+                    Choice(ch: "7"),
+                    Choice(ch: "10"),
+                    Choice(ch: "2"),
+                    Choice(ch: "5"),
+                    ],
+                    correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+                ])),
+            Quiz(name: "Test2", image : UIImage(named: "1")!, calcs : Calcs(questions: [
+            Question(question: "5+18", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "2"),
+                Choice(ch: "5"),
                 ],
-                    correctAns: Answer(selection: "16")),
-                Question(question: "4 x 3", answers: [
-                    Answer(selection: "3"),
-                    Answer(selection: "12"),
-                    Answer(selection: "16"),
-                    Answer(selection: "25"),
+                     correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+            Question(question: "5+90", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "2"),
+                Choice(ch: "5"),
                 ],
-                    correctAns: Answer(selection: "12")),
-                Question(question: "4 x 1", answers: [
-                    Answer(selection: "4"),
-                    Answer(selection: "1"),
-                    Answer(selection: "16"),
-                    Answer(selection: "25"),
+                correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+            Question(question: "5+33", choices: [
+                Choice(ch: "7"),
+                Choice(ch: "10"),
+                Choice(ch: "2"),
+                Choice(ch: "5"),
                 ],
-                    correctAns: Answer(selection: "4")),
-                Question(question: "0 x 4", answers: [
-                    Answer(selection: "3"),
-                    Answer(selection: "1"),
-                    Answer(selection: "0"),
-                    Answer(selection: "25"),
-                ],
-                    correctAns: Answer(selection: "0")),
-        ])),
+                correctAns: Choice(ch: "7"), image: UIImage(named: "1")!),
+            ]))
         ]
+        
+    }
+    
+}
+
+class Question {
+    var question : String
+    var choices : [Choice]
+    var correctAns : Choice
+    var selection : Choice?
+    var image : UIImage
+    
+    init(question: String, choices: [Choice], correctAns : Choice, image: UIImage){
+        self.question = question
+        self.choices = choices
+        self.correctAns = correctAns
+        self.image = image
+//        self.selection = selection
+    }
+    
+    func userChoice(ans : Choice){
+        selection!.ch = ans.ch
+    }
+    
+}
+
+class Choice{
+    var ch : String
+    init(ch : String){
+        self.ch = ch
     }
 }
-//class Question{
-//    var question : String
-//    var answers : [Answer]
-//    var correctAns : Answer
-//    var selection = Answer(selection: "")
-//
-//    init(question : String, answers: [Answer], correctAns : Answer){
-//        self.question = question
-//        self.answers = answers
-//        self.correctAns = correctAns
-//    }
-//    func selectedAns(ans: Answer){
-//        self.selection = ans
-//    }
-//    func showAns(){
-//        print(selection.selection as String)
-//
-//    }
-//}
-//class Answer {
-//    var selection : String
-//    init(selection : String){
-//        self.selection = selection
-//    }
-//}
-//
-//class Options {
-//    var qs : [Question]
-//
-//    init(qs : [Question]){
-//        self.qs = qs
-//    }
-//
-//}
+
+class Calcs {
+    var questions : [Question]
+    init(questions : [Question]){
+        self.questions = questions
+    }
+}
+

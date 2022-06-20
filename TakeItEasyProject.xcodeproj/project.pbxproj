@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6BD5D3285D2756009B3E99 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD5D2285D2756009B3E99 /* QuizViewController.swift */; };
+		3B6BD64328600B06009B3E99 /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64228600B06009B3E99 /* QuestionCollectionViewCell.swift */; };
+		3B6BD64528600B31009B3E99 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64428600B31009B3E99 /* QuestionViewController.swift */; };
+		3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */; };
+		3B6BD64928600C35009B3E99 /* SQLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64828600C35009B3E99 /* SQLHelper.swift */; };
+		3B6BD64B28600C9F009B3E99 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64A28600C9F009B3E99 /* QuizData.swift */; };
 		3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */; };
 		3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */; };
 		3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B81285B91AC0030EC25 /* ViewController.swift */; };
@@ -17,16 +23,19 @@
 		3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B94285B92120030EC25 /* SearchViewController.swift */; };
 		3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B96285C9BAA0030EC25 /* SQLite.swift */; };
 		3BEC0B99285CA2B60030EC25 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B98285CA2B60030EC25 /* Quiz.swift */; };
-		3BEC0B9B285CA2C80030EC25 /* QuizResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B9A285CA2C70030EC25 /* QuizResults.swift */; };
+		3BEC0B9B285CA2C80030EC25 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B9A285CA2C70030EC25 /* Result.swift */; };
 		3BEC0B9D285CAFA30030EC25 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B9C285CAFA30030EC25 /* Score.swift */; };
 		3BEC0BA1285CB6340030EC25 /* QuizDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0BA0285CB6340030EC25 /* QuizDB.swift */; };
 		3BEC0BAD285D0E780030EC25 /* QuizStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0BAC285D0E780030EC25 /* QuizStoryboard.storyboard */; };
-		3BEC0BAF285D0EA80030EC25 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0BAE285D0EA80030EC25 /* Question.swift */; };
-		3BEC0BB1285D0EB90030EC25 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0BB0285D0EB90030EC25 /* Answer.swift */; };
-		3BEC0BB3285D0ED10030EC25 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0BB2285D0ED10030EC25 /* Options.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6BD5D2285D2756009B3E99 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		3B6BD64228600B06009B3E99 /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B6BD64428600B31009B3E99 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B6BD64828600C35009B3E99 /* SQLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLHelper.swift; sourceTree = "<group>"; };
+		3B6BD64A28600C9F009B3E99 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
 		3BEC0B7A285B91AC0030EC25 /* TakeItEasyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,13 +48,10 @@
 		3BEC0B94285B92120030EC25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3BEC0B96285C9BAA0030EC25 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
 		3BEC0B98285CA2B60030EC25 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
-		3BEC0B9A285CA2C70030EC25 /* QuizResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResults.swift; sourceTree = "<group>"; };
+		3BEC0B9A285CA2C70030EC25 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		3BEC0B9C285CAFA30030EC25 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		3BEC0BA0285CB6340030EC25 /* QuizDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDB.swift; sourceTree = "<group>"; };
 		3BEC0BAC285D0E780030EC25 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
-		3BEC0BAE285D0EA80030EC25 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		3BEC0BB0285D0EB90030EC25 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
-		3BEC0BB2285D0ED10030EC25 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +96,15 @@
 				3BEC0B94285B92120030EC25 /* SearchViewController.swift */,
 				3BEC0B96285C9BAA0030EC25 /* SQLite.swift */,
 				3BEC0B98285CA2B60030EC25 /* Quiz.swift */,
-				3BEC0B9A285CA2C70030EC25 /* QuizResults.swift */,
+				3BEC0B9A285CA2C70030EC25 /* Result.swift */,
 				3BEC0BA0285CB6340030EC25 /* QuizDB.swift */,
 				3BEC0BAC285D0E780030EC25 /* QuizStoryboard.storyboard */,
-				3BEC0BAE285D0EA80030EC25 /* Question.swift */,
-				3BEC0BB0285D0EB90030EC25 /* Answer.swift */,
-				3BEC0BB2285D0ED10030EC25 /* Options.swift */,
+				3B6BD5D2285D2756009B3E99 /* QuizViewController.swift */,
+				3B6BD64228600B06009B3E99 /* QuestionCollectionViewCell.swift */,
+				3B6BD64428600B31009B3E99 /* QuestionViewController.swift */,
+				3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */,
+				3B6BD64828600C35009B3E99 /* SQLHelper.swift */,
+				3B6BD64A28600C9F009B3E99 /* QuizData.swift */,
 			);
 			path = TakeItEasyProject;
 			sourceTree = "<group>";
@@ -173,18 +182,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BEC0BA1285CB6340030EC25 /* QuizDB.swift in Sources */,
+				3B6BD5D3285D2756009B3E99 /* QuizViewController.swift in Sources */,
 				3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */,
-				3BEC0BB3285D0ED10030EC25 /* Options.swift in Sources */,
 				3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */,
-				3BEC0BB1285D0EB90030EC25 /* Answer.swift in Sources */,
+				3B6BD64328600B06009B3E99 /* QuestionCollectionViewCell.swift in Sources */,
+				3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */,
 				3BEC0B99285CA2B60030EC25 /* Quiz.swift in Sources */,
+				3B6BD64528600B31009B3E99 /* QuestionViewController.swift in Sources */,
 				3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */,
 				3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */,
 				3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */,
+				3B6BD64928600C35009B3E99 /* SQLHelper.swift in Sources */,
+				3B6BD64B28600C9F009B3E99 /* QuizData.swift in Sources */,
 				3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */,
 				3BEC0B9D285CAFA30030EC25 /* Score.swift in Sources */,
-				3BEC0BAF285D0EA80030EC25 /* Question.swift in Sources */,
-				3BEC0B9B285CA2C80030EC25 /* QuizResults.swift in Sources */,
+				3BEC0B9B285CA2C80030EC25 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

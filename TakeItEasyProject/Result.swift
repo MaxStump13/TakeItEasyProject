@@ -7,7 +7,7 @@
 
 import Foundation
 
-class QuizResults {
+class Result {
     var name : String
     var score : Int
     var date : String
