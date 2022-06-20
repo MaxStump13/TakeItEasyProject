@@ -41,8 +41,12 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
             let url = "https://itunes.apple.com/search?entity=song&term=taylor+swift"
                 getData(from : url)
         
-        tableview.reloadData()
+        //tableview.reloadData()
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        sleep(1)
+        tableview.reloadData()
     }
     
     
@@ -265,7 +269,8 @@ func imageLoader(urlString: String, cell : MusicCollectionViewCell){
         getData(from : url)
         print("the url ", url)
         print("the artist ", artist)
-        
+        sleep(2)
+        tableview.reloadData()
     }
     
     
