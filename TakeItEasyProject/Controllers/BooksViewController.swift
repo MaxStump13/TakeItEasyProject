@@ -59,7 +59,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             }
 
             return bookCell
-        } else if collectionView == CookBooksCollection {
+        } else{ //if collectionView == CookBooksCollection {
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CookCell", for: indexPath) as! CookBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true

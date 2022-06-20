@@ -597,21 +597,21 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-6i-VOX">
-                                <rect key="frame" x="0.0" y="661" width="414" height="137"/>
+                                <rect key="frame" x="0.0" y="641" width="414" height="157"/>
                                 <color key="backgroundColor" name="systemMintColor" catalog="System" colorSpace="catalog"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xs3-Oz-8ee">
-                                    <size key="itemSize" width="143" height="128"/>
-                                    <size key="estimatedItemSize" width="149" height="148"/>
+                                    <size key="itemSize" width="92" height="125"/>
+                                    <size key="estimatedItemSize" width="92" height="125"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CookCell" id="1x5-va-ogr" customClass="CookBookCollectionViewCell" customModule="TakeItEasyProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="4.5" width="143" height="128"/>
+                                        <rect key="frame" x="0.0" y="14.5" width="92" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rLH-1Q-MyC">
-                                            <rect key="frame" x="0.0" y="0.0" width="143" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PK-VM-YOg">
@@ -622,11 +622,12 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cr7-xs-RPo">
-                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="128"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="92" height="128"/>
                                         <connections>
                                             <outlet property="ImageBackground" destination="cr7-xs-RPo" id="WRR-Tj-RhV"/>
                                             <outlet property="nameC" destination="2PK-VM-YOg" id="B9I-xU-blA"/>
@@ -664,7 +665,7 @@
                             <constraint firstItem="jcH-Fj-zaJ" firstAttribute="top" secondItem="8tS-zz-xx3" secondAttribute="top" id="nSx-uy-Gck"/>
                             <constraint firstItem="dLz-2n-rEi" firstAttribute="trailing" secondItem="dIl-NS-9j2" secondAttribute="trailing" id="scm-XR-gyW"/>
                             <constraint firstItem="dLz-2n-rEi" firstAttribute="top" secondItem="jcH-Fj-zaJ" secondAttribute="bottom" id="vTV-AP-cf6"/>
-                            <constraint firstItem="cvv-6i-VOX" firstAttribute="top" secondItem="Z2E-cr-0oV" secondAttribute="bottom" constant="70" id="vyC-m3-Lxw"/>
+                            <constraint firstItem="cvv-6i-VOX" firstAttribute="top" secondItem="Z2E-cr-0oV" secondAttribute="bottom" constant="50" id="vyC-m3-Lxw"/>
                             <constraint firstItem="cvv-6i-VOX" firstAttribute="trailing" secondItem="Z2E-cr-0oV" secondAttribute="trailing" id="yvV-Bj-PAH"/>
                             <constraint firstItem="jcH-Fj-zaJ" firstAttribute="centerX" secondItem="HIy-ya-CKV" secondAttribute="centerX" id="zvJ-0N-OHQ"/>
                         </constraints>
