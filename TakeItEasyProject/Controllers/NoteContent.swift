@@ -31,13 +31,13 @@ class NoteContent: UIViewController {
             body = content.text
             isActive = true
             microphone.tintColor = UIColor.red
-            //startSpeechRecog()
+            startSpeechRecog()
         }
         else{
             isActive = false
             microphone.tintColor = UIColor.orange
-            //stopSpeechRecog()
-            //body = content.text
+            stopSpeechRecog()
+            body = content.text
         }
     }
     
