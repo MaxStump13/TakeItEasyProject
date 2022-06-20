@@ -35,9 +35,10 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        var front = Design().gradient(boundary: self.view)
+        view.layer.insertSublayer(front, at: 0)
 
-                let url = "https://itunes.apple.com/search?entity=song&term=taylor+swift"
+            let url = "https://itunes.apple.com/search?entity=song&term=taylor+swift"
                 getData(from : url)
         
         tableview.reloadData()

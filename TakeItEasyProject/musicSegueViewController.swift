@@ -38,6 +38,9 @@ class musicSegueViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        var front = Design().gradient(boundary: self.view)
+        view.layer.insertSublayer(front, at: 0)
+        
 //        artImg.image = art
         artistName.text = name
         songTitle.text = songName
@@ -119,18 +122,6 @@ class musicSegueViewController: UIViewController {
             secondsRemaining += 1
             progBar.progress = Float(secondsRemaining) / Float(myTime)
             
-//            print("\(secondsRemaining) seconds")
-//            if(startTime.text! != resultTime.text!){
-//                secondsRemaining = secondsRemaining + 1
-//                let time = secToMin(seconds: secondsRemaining + 1)
-//
-//                startTime.text = String(format:"%02d",time.0) + ":" + String(format: "%02d",secondsRemaining)
-//
-//                var finalTime = Float(30)
-//                //secToMin(seconds: Int(audioPlayer!.duration))
-//
-//                resultTime.text = String(format:"%02d", myTime) + ":" + String(format: "%02d", myTime)
-        //}
         }else{
             timer.invalidate()
         }

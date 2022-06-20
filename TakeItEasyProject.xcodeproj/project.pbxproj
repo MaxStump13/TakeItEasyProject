@@ -9,19 +9,14 @@
 /* Begin PBXBuildFile section */
 		3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */; };
 		3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */; };
-		3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B81285B91AC0030EC25 /* ViewController.swift */; };
 		3BEC0B85285B91AC0030EC25 /* music.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B83285B91AC0030EC25 /* music.storyboard */; };
 		3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */; };
 		3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B89285B91AF0030EC25 /* Assets.xcassets */; };
 		3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */; };
-		3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B94285B92120030EC25 /* SearchViewController.swift */; };
 		70A2574D285B98F90000A0ED /* iTunesConn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2574C285B98F90000A0ED /* iTunesConn.swift */; };
 		70A2574F285B9E3C0000A0ED /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2574E285B9E3C0000A0ED /* MusicViewController.swift */; };
 		70A25751285B9E8B0000A0ED /* MusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A25750285B9E8B0000A0ED /* MusicCollectionViewCell.swift */; };
 		70A2575F285F15200000A0ED /* musicSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2575E285F15200000A0ED /* musicSegueViewController.swift */; };
-		3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */; };
-		3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B89285B91AF0030EC25 /* Assets.xcassets */; };
-		3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */; };
 		8434B9CD285BA3DA0028A5D8 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */; };
 		8434B9CF285BA3E50028A5D8 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */; };
 		8434B9D1285BA3F70028A5D8 /* DbHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D0285BA3F60028A5D8 /* DbHandler.swift */; };
@@ -37,6 +32,8 @@
 		8438DC78285BB02D00A67F49 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */; };
 		84574704285C2A78003D295C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84574703285C2A78003D295C /* SearchController.swift */; };
 		84574720285E7255003D295C /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457471F285E7255003D295C /* Design.swift */; };
+		8457474828605CE4003D295C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457474728605CE4003D295C /* ViewController.swift */; };
+		8457474E28605E37003D295C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457474D28605E37003D295C /* SearchViewController.swift */; };
 		F7049646285D54B900014E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7049645285D54B900014E2E /* Main.storyboard */; };
 		F7638BC8285C207C006F10C0 /* Books.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7638BC7285C207C006F10C0 /* Books.storyboard */; };
 		F7638BCA285C21BF006F10C0 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7638BC9285C21BF006F10C0 /* BooksViewController.swift */; };
@@ -57,13 +54,11 @@
 		3BEC0B7A285B91AC0030EC25 /* TakeItEasyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3BEC0B81285B91AC0030EC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3BEC0B84285B91AC0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/music.storyboard; sourceTree = "<group>"; };
 		3BEC0B87285B91AC0030EC25 /* TakeItEasyProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeItEasyProject.xcdatamodel; sourceTree = "<group>"; };
 		3BEC0B89285B91AF0030EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BEC0B8C285B91AF0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BEC0B8E285B91AF0030EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BEC0B94285B92120030EC25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		70A2574C285B98F90000A0ED /* iTunesConn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesConn.swift; sourceTree = "<group>"; };
 		70A2574E285B9E3C0000A0ED /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		70A25750285B9E8B0000A0ED /* MusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -83,6 +78,8 @@
 		8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		84574703285C2A78003D295C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		8457471F285E7255003D295C /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		8457474728605CE4003D295C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		8457474D28605E37003D295C /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		F7049645285D54B900014E2E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F7638BC7285C207C006F10C0 /* Books.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Books.storyboard; sourceTree = "<group>"; };
 		F7638BC9285C21BF006F10C0 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
@@ -141,15 +138,12 @@
 				F7638CA5285D0E46006F10C0 /* Books */,
 				3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
-				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
-				3BEC0B83285B91AC0030EC25 /* music.storyboard */,
-				3BEC0B89285B91AF0030EC25 /* Assets.xcassets */,
+				8457474728605CE4003D295C /* ViewController.swift */,
 				8457471F285E7255003D295C /* Design.swift */,
 				8438DC71285BAFAF00A67F49 /* UsersName.swift */,
 				F7638BCB285C2297006F10C0 /* Model.swift */,
 				3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */,
 				3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */,
-				3BEC0B94285B92120030EC25 /* SearchViewController.swift */,
 				70A2574E285B9E3C0000A0ED /* MusicViewController.swift */,
 				70A25750285B9E8B0000A0ED /* MusicCollectionViewCell.swift */,
 				70A2575E285F15200000A0ED /* musicSegueViewController.swift */,
@@ -169,7 +163,6 @@
 				F7638BC9285C21BF006F10C0 /* BooksViewController.swift */,
 				F7638BCD285C22CA006F10C0 /* BookWebViewController.swift */,
 				8434B9D6285BA41D0028A5D8 /* NoteController.swift */,
-				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
 				F7638CAF285D105B006F10C0 /* PDFViewController.swift */,
 			);
 			path = Controllers;
@@ -178,6 +171,8 @@
 		84574742285E9693003D295C /* storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				8457474D28605E37003D295C /* SearchViewController.swift */,
+				3BEC0B83285B91AC0030EC25 /* music.storyboard */,
 				8438DC6B285BAF7400A67F49 /* SignUp.storyboard */,
 				8434B9D2285BA4040028A5D8 /* Note.storyboard */,
 				F7049645285D54B900014E2E /* Main.storyboard */,
@@ -296,15 +291,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8457474E28605E37003D295C /* SearchViewController.swift in Sources */,
 				70A25751285B9E8B0000A0ED /* MusicCollectionViewCell.swift in Sources */,
-				3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */,
 				70A2574F285B9E3C0000A0ED /* MusicViewController.swift in Sources */,
 				F7638BD4285C235A006F10C0 /* CookBookCollectionViewCell.swift in Sources */,
 				F7638CB0285D105B006F10C0 /* PDFViewController.swift in Sources */,
 				F7638BCA285C21BF006F10C0 /* BooksViewController.swift in Sources */,
 				8438DC70285BAFA700A67F49 /* SignUpViewController.swift in Sources */,
-				3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */,
 				8438DC74285BAFB600A67F49 /* DBHelperUser.swift in Sources */,
+				8457474828605CE4003D295C /* ViewController.swift in Sources */,
 				8438DC72285BAFAF00A67F49 /* UsersName.swift in Sources */,
 				3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */,
 				F7638BCC285C2297006F10C0 /* Model.swift in Sources */,
