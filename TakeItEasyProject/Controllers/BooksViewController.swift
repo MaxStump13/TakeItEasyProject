@@ -136,7 +136,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
         view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
         
         // Cook books
-        fetchBooks(urlString: "https://www.googleapis.com/books/v1/volumes?&q=cookpdf&key=AIzaSyDFPkdgwDotfduJ8MH-QR128RNdMn-Wo24") { books in
+        fetchBooks(urlString: "https://www.googleapis.com/books/v1/volumes?&q=cookspdf&key=AIzaSyDFPkdgwDotfduJ8MH-QR128RNdMn-Wo24") { books in
             self.CookBooks = books
             DispatchQueue.main.async {
                self.CookBooksCollection.reloadData()
