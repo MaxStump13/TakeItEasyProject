@@ -17,7 +17,7 @@ class SQLite {
     
     func createDB(){
 //        print("about to create DB")
-        let filePath = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("QuizzesDB.sqlite")
+        let filePath = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("QuizzesDB1.sqlite")
 //        print("creating db")
         if sqlite3_open(filePath.path, &dbPointer) != SQLITE_OK{
             print("can not open DB")

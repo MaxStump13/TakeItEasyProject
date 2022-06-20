@@ -13,6 +13,7 @@
 		3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */; };
 		3B6BD64928600C35009B3E99 /* SQLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64828600C35009B3E99 /* SQLHelper.swift */; };
 		3B6BD64B28600C9F009B3E99 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64A28600C9F009B3E99 /* QuizData.swift */; };
+		3B6BD64D286078F5009B3E99 /* QuizLabelRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64C286078F4009B3E99 /* QuizLabelRes.swift */; };
 		3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */; };
 		3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */; };
 		3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B81285B91AC0030EC25 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B6BD64828600C35009B3E99 /* SQLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLHelper.swift; sourceTree = "<group>"; };
 		3B6BD64A28600C9F009B3E99 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		3B6BD64C286078F4009B3E99 /* QuizLabelRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLabelRes.swift; sourceTree = "<group>"; };
 		3BEC0B7A285B91AC0030EC25 /* TakeItEasyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */,
 				3B6BD64828600C35009B3E99 /* SQLHelper.swift */,
 				3B6BD64A28600C9F009B3E99 /* QuizData.swift */,
+				3B6BD64C286078F4009B3E99 /* QuizLabelRes.swift */,
 			);
 			path = TakeItEasyProject;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */,
 				3B6BD64328600B06009B3E99 /* QuestionCollectionViewCell.swift in Sources */,
 				3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */,
+				3B6BD64D286078F5009B3E99 /* QuizLabelRes.swift in Sources */,
 				3BEC0B99285CA2B60030EC25 /* Quiz.swift in Sources */,
 				3B6BD64528600B31009B3E99 /* QuestionViewController.swift in Sources */,
 				3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */,

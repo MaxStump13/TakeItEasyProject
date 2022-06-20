@@ -102,7 +102,7 @@ class Question {
     var question : String
     var choices : [Choice]
     var correctAns : Choice
-    var selection : Choice?
+    var selection = Choice(ch: "")
     var image : UIImage
     
     init(question: String, choices: [Choice], correctAns : Choice, image: UIImage){
@@ -114,7 +114,7 @@ class Question {
     }
     
     func userChoice(ans : Choice){
-        selection!.ch = ans.ch
+        selection.ch = ans.ch
     }
     
 }
