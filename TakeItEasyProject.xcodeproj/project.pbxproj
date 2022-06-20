@@ -17,11 +17,9 @@
 		3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */; };
 		3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */; };
 		3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B81285B91AC0030EC25 /* ViewController.swift */; };
-		3BEC0B85285B91AC0030EC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B83285B91AC0030EC25 /* Main.storyboard */; };
 		3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */; };
 		3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B89285B91AF0030EC25 /* Assets.xcassets */; };
 		3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */; };
-		3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B94285B92120030EC25 /* SearchViewController.swift */; };
 		3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B96285C9BAA0030EC25 /* SQLite.swift */; };
 		3BEC0B99285CA2B60030EC25 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B98285CA2B60030EC25 /* Quiz.swift */; };
 		3BEC0B9B285CA2C80030EC25 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B9A285CA2C70030EC25 /* Result.swift */; };
@@ -42,12 +40,10 @@
 		3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B81285B91AC0030EC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BEC0B84285B91AC0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BEC0B87285B91AC0030EC25 /* TakeItEasyProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeItEasyProject.xcdatamodel; sourceTree = "<group>"; };
 		3BEC0B89285B91AF0030EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BEC0B8C285B91AF0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BEC0B8E285B91AF0030EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BEC0B94285B92120030EC25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3BEC0B96285C9BAA0030EC25 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
 		3BEC0B98285CA2B60030EC25 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		3BEC0B9A285CA2C70030EC25 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -90,12 +86,10 @@
 				3BEC0B9C285CAFA30030EC25 /* Score.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
 				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
-				3BEC0B83285B91AC0030EC25 /* Main.storyboard */,
 				3BEC0B89285B91AF0030EC25 /* Assets.xcassets */,
 				3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */,
 				3BEC0B8E285B91AF0030EC25 /* Info.plist */,
 				3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */,
-				3BEC0B94285B92120030EC25 /* SearchViewController.swift */,
 				3BEC0B96285C9BAA0030EC25 /* SQLite.swift */,
 				3BEC0B98285CA2B60030EC25 /* Quiz.swift */,
 				3BEC0B9A285CA2C70030EC25 /* Result.swift */,
@@ -173,7 +167,6 @@
 				3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */,
 				3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */,
 				3BEC0BAD285D0E780030EC25 /* QuizStoryboard.storyboard in Resources */,
-				3BEC0B85285B91AC0030EC25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +179,6 @@
 			files = (
 				3BEC0BA1285CB6340030EC25 /* QuizDB.swift in Sources */,
 				3B6BD5D3285D2756009B3E99 /* QuizViewController.swift in Sources */,
-				3BEC0B95285B92120030EC25 /* SearchViewController.swift in Sources */,
 				3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */,
 				3B6BD64328600B06009B3E99 /* QuestionCollectionViewCell.swift in Sources */,
 				3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */,
@@ -207,14 +199,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3BEC0B83285B91AC0030EC25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BEC0B84285B91AC0030EC25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,7 +336,7 @@
 				INFOPLIST_FILE = TakeItEasyProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = QuizStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -381,7 +365,7 @@
 				INFOPLIST_FILE = TakeItEasyProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = QuizStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

@@ -45,7 +45,7 @@ func initializeSQLite(){
     SQLite.sqlObj.createTable()
     SQLite.sqlObj.createResultsTable()
 //    deleteAllData()
-//    insertAllData()
+    insertAllData()
     
     
     
