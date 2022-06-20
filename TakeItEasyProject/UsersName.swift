@@ -19,7 +19,7 @@ class CurrentUser {
     
     func out(current: UIViewController){
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "Main")
+            let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "SignIn")
             loginNextScreen.modalPresentationStyle = .fullScreen
             current.present(loginNextScreen, animated: true, completion: nil)
     }
