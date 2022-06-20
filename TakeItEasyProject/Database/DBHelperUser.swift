@@ -64,6 +64,7 @@ class DBHelperUser {
                 user = request.first as! User
             } else {
                 print("Error: No user found.")
+                return user
             }
         } catch {
             print("Error.")

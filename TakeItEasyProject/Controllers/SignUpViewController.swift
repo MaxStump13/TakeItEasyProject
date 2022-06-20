@@ -32,6 +32,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //design
+        var front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
     }
     
     

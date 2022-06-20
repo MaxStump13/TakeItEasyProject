@@ -3,13 +3,16 @@
 //  TakeItEasy
 //
 //  Created by Zachary Saffron on 6/8/22.
+//  Design by Jacob Digby
 //
 
 import UIKit
 import CoreData
 
 class SignInViewController: UIViewController {
-
+    
+    var front: Design?
+    
     // All connections used for SignInViewController
 
     @IBOutlet weak var enterEmailTextField: UITextField!
@@ -22,13 +25,16 @@ class SignInViewController: UIViewController {
     let userDef = UserDefaults.standard
     let switchStatus = UserDefaults.standard
     
-    
     // This function checks if rememberMe switch is on
     // Saves the data and calls it to the email and password text fields
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //front end design elements
+        front = Design()
+        view.layer.insertSublayer((front?.gradient(boundary: view))!, at: 0)
+        
         if(switchStatus.bool(forKey: "switch")){
             remSwitch.setOn(true, animated: true)
             let req : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : userDef.value(forKey: "UN") as! String, kSecReturnAttributes as String : true, kSecReturnData as String : true]
@@ -88,7 +94,7 @@ class SignInViewController: UIViewController {
         func checkInput(text : String) -> Bool {
             var isValid = false
             if !text.isEmpty && text != "" && text != nil {
-                isValid = true
+                    isValid = true
             }
             return isValid
         }
@@ -96,23 +102,24 @@ class SignInViewController: UIViewController {
         if checkInput(text: emailTextField) && checkInput(text: passwordTextField) {
             //check if user is registered
             if !DBHelperUser.dbHelperUser.isUserRegistered(username: emailTextField) {
-                errorMessage.text = "Please sign in first"
+                errorMessage.text = "Please sign up first"
             }
-            //check if password is correct
-            //let correctPassword = DBHelperUser.dbHelperUser.getOne(username: emailTextField).password
-            let user = DBHelperUser.dbHelperUser.getOne(username: emailTextField)
-            let correctPassword = user.password
-            if passwordTextField == correctPassword {
-                //present the tab bar controller in full screen
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "TabBar")
-                //show the tab controller as an instantiated vc
-                loginNextScreen.modalPresentationStyle = .fullScreen
-                self.present(loginNextScreen, animated: true, completion: nil)
-                //save password to keychain if remember me is on
-                //savePassword()
-            } else {
-                errorMessage.text = "Please check username/password."
+            else{
+                //check if password is correct
+                let correctPassword = DBHelperUser.dbHelperUser.getOne(username: emailTextField).password
+                let user = DBHelperUser.dbHelperUser.getOne(username: emailTextField)
+                    if passwordTextField == correctPassword{
+                        //present the tab bar controller in full screen
+                        CurrentUser.currentUser.name = user.name
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let loginNextScreen = storyboard.instantiateViewController(withIdentifier: "TabBar")
+                        //show the tab controller as an instantiated vc
+                        loginNextScreen.modalPresentationStyle = .fullScreen
+                        self.present(loginNextScreen, animated: true, completion: nil)
+                        //save password to keychain if remember me is on
+               } else {
+                    errorMessage.text = "Please check username/password."
+               }
             }
         } else {
             errorMessage.text = "Please input username/password."

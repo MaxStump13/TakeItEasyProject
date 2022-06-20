@@ -13,6 +13,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
     @IBOutlet weak var TechBooksCollection: UICollectionView!
     @IBOutlet weak var CookBooksCollection: UICollectionView!
     @IBOutlet weak var SearchBar: UISearchBar!
+    @IBOutlet weak var user: UILabel!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == GeneralBooksCollection {
@@ -30,7 +31,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCell", for: indexPath) as! GeneralBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true
-            bookCell.backgroundColor = .yellow
+            //bookCell.backgroundColor = .yellow
             bookCell.nameA.text = filteredGeneralBooks[indexPath.row].volumeInfo.title
             if let imageUrl = URL(string: filteredGeneralBooks[indexPath.row].volumeInfo.imageLinks.thumbnail),
                let data = try? Data(contentsOf: imageUrl) {
@@ -46,7 +47,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TechCell", for: indexPath) as! TechBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true
-            bookCell.backgroundColor = .yellow
+            //bookCell.backgroundColor = .yellow
             bookCell.nameB.text = filteredTechBooks[indexPath.row].volumeInfo.title
             if let imageUrl = URL(string: filteredTechBooks[indexPath.row].volumeInfo.imageLinks.thumbnail),
                let data = try? Data(contentsOf: imageUrl) {
@@ -62,7 +63,7 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
             let bookCell = collectionView.dequeueReusableCell(withReuseIdentifier: "CookCell", for: indexPath) as! CookBookCollectionViewCell
             bookCell.layer.cornerRadius = 5.0
             bookCell.layer.masksToBounds = true
-            bookCell.backgroundColor = .yellow
+            //bookCell.backgroundColor = .yellow
             bookCell.nameC.text = filteredCookBooks[indexPath.row].volumeInfo.title
             if let imageUrl = URL(string: filteredCookBooks[indexPath.row].volumeInfo.imageLinks.thumbnail),
                let data = try? Data(contentsOf: imageUrl) {
@@ -129,6 +130,11 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Design Elements
+        user.text = CurrentUser.currentUser.name
+        let front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
+        
         // Cook books
         fetchBooks(urlString: "https://www.googleapis.com/books/v1/volumes?&q=cookpdf&key=AIzaSyDFPkdgwDotfduJ8MH-QR128RNdMn-Wo24") { books in
             self.CookBooks = books
@@ -181,4 +187,10 @@ class BooksViewController: UIViewController, UICollectionViewDataSource,UICollec
         }
         bookDataTask.resume()
     }
+    
+    @IBAction func logout(_ sender: Any) {
+        CurrentUser.currentUser.out(current: self)
+        print("click")
+    }
+    
 }

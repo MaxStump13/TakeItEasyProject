@@ -13,10 +13,9 @@ class SearchController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func openGoogle(_ sender: Any){
+        // Design Elements
+        let front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
         let webKitView = WKWebView()
         let newUrl = URL(string: "https://www.google.com")
         

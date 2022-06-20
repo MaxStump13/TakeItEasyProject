@@ -13,6 +13,7 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var filter: [String] = [] //store for table data, variable exists in order to allow for search
     var table = DbHandler.dbHandler.retrieveAllNote() //primary container for note core-data
     
+    @IBOutlet weak var user: UILabel!
     @IBOutlet weak var search: UISearchBar!
     @IBOutlet weak var tv: UITableView!
     
@@ -77,6 +78,7 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //when view reappears, tables are reloaded to affect changes
     override func viewDidAppear(_ animated: Bool) {
+        user.text = CurrentUser.currentUser.name
         table = DbHandler.dbHandler.retrieveAllNote()
         filter.removeAll()
         for i in table{
@@ -87,6 +89,11 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Design Elements
+        let front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
+        
     }
 
     //creates new cell entry on button click
@@ -99,5 +106,9 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationController?.pushViewController(note, animated: true)
         tv.reloadData()
 
+    }
+    
+    @IBAction func out(_ sender: Any) {
+        CurrentUser.currentUser.out(current: self)
     }
 }

@@ -35,7 +35,7 @@ class NoteContent: UIViewController {
         }
         else{
             isActive = false
-            microphone.tintColor = UIColor.blue
+            microphone.tintColor = UIColor.orange
             stopSpeechRecog()
             body = content.text
         }
@@ -43,7 +43,12 @@ class NoteContent: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        microphone.tintColor = UIColor.blue
+        
+        //Design Elements
+        let front = Design()
+        view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
+        
+        microphone.tintColor = UIColor.orange
         name.text = header
         content.text = body
     }
