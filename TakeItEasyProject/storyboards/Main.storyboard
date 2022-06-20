@@ -597,7 +597,7 @@
                                 </connections>
                             </collectionView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-6i-VOX">
-                                <rect key="frame" x="0.0" y="666" width="414" height="132"/>
+                                <rect key="frame" x="0.0" y="661" width="414" height="137"/>
                                 <color key="backgroundColor" name="systemMintColor" catalog="System" colorSpace="catalog"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xs3-Oz-8ee">
                                     <size key="itemSize" width="143" height="128"/>
@@ -608,7 +608,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CookCell" id="1x5-va-ogr" customClass="CookBookCollectionViewCell" customModule="TakeItEasyProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="2" width="143" height="128"/>
+                                        <rect key="frame" x="0.0" y="4.5" width="143" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rLH-1Q-MyC">
                                             <rect key="frame" x="0.0" y="0.0" width="143" height="128"/>
@@ -651,14 +651,12 @@
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
                             <constraint firstItem="dIl-NS-9j2" firstAttribute="leading" secondItem="8tS-zz-xx3" secondAttribute="leading" id="0BM-Fd-Z4W"/>
-                            <constraint firstItem="cvv-6i-VOX" firstAttribute="top" secondItem="Z2E-cr-0oV" secondAttribute="bottom" constant="75" id="5EE-8e-Yhz"/>
-                            <constraint firstItem="cvv-6i-VOX" firstAttribute="leading" secondItem="8tS-zz-xx3" secondAttribute="leading" id="9D1-Rf-twY"/>
+                            <constraint firstItem="8tS-zz-xx3" firstAttribute="bottom" secondItem="cvv-6i-VOX" secondAttribute="bottom" constant="15" id="1Ca-3b-ePg"/>
                             <constraint firstItem="nwV-2W-uAl" firstAttribute="top" secondItem="HIy-ya-CKV" secondAttribute="top" constant="83" id="BOx-Af-e1Z"/>
-                            <constraint firstItem="8tS-zz-xx3" firstAttribute="bottom" secondItem="cvv-6i-VOX" secondAttribute="bottom" constant="15" id="Ef9-Yj-9Jo"/>
-                            <constraint firstItem="cvv-6i-VOX" firstAttribute="trailing" secondItem="8tS-zz-xx3" secondAttribute="trailing" id="Ru5-yg-m7W"/>
                             <constraint firstItem="Z2E-cr-0oV" firstAttribute="top" secondItem="dIl-NS-9j2" secondAttribute="bottom" constant="75" id="Tji-QO-ETU"/>
                             <constraint firstItem="Z2E-cr-0oV" firstAttribute="trailing" secondItem="8tS-zz-xx3" secondAttribute="trailing" id="Ve2-Hc-13S"/>
                             <constraint firstItem="dLz-2n-rEi" firstAttribute="leading" secondItem="dIl-NS-9j2" secondAttribute="leading" id="XRj-57-Mbp"/>
+                            <constraint firstItem="cvv-6i-VOX" firstAttribute="leading" secondItem="Z2E-cr-0oV" secondAttribute="leading" id="bSn-3q-Jky"/>
                             <constraint firstItem="nwV-2W-uAl" firstAttribute="trailing" secondItem="8tS-zz-xx3" secondAttribute="trailing" id="dbi-oM-CRH"/>
                             <constraint firstItem="dIl-NS-9j2" firstAttribute="trailing" secondItem="8tS-zz-xx3" secondAttribute="trailing" id="df7-WP-Pbu"/>
                             <constraint firstItem="dIl-NS-9j2" firstAttribute="top" secondItem="dLz-2n-rEi" secondAttribute="bottom" constant="75" id="hpE-uj-phB"/>
@@ -666,6 +664,8 @@
                             <constraint firstItem="jcH-Fj-zaJ" firstAttribute="top" secondItem="8tS-zz-xx3" secondAttribute="top" id="nSx-uy-Gck"/>
                             <constraint firstItem="dLz-2n-rEi" firstAttribute="trailing" secondItem="dIl-NS-9j2" secondAttribute="trailing" id="scm-XR-gyW"/>
                             <constraint firstItem="dLz-2n-rEi" firstAttribute="top" secondItem="jcH-Fj-zaJ" secondAttribute="bottom" id="vTV-AP-cf6"/>
+                            <constraint firstItem="cvv-6i-VOX" firstAttribute="top" secondItem="Z2E-cr-0oV" secondAttribute="bottom" constant="70" id="vyC-m3-Lxw"/>
+                            <constraint firstItem="cvv-6i-VOX" firstAttribute="trailing" secondItem="Z2E-cr-0oV" secondAttribute="trailing" id="yvV-Bj-PAH"/>
                             <constraint firstItem="jcH-Fj-zaJ" firstAttribute="centerX" secondItem="HIy-ya-CKV" secondAttribute="centerX" id="zvJ-0N-OHQ"/>
                         </constraints>
                     </view>
@@ -673,7 +673,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="CookBooksCollection" destination="cvv-6i-VOX" id="Z6r-Jd-SSR"/>
+                        <outlet property="CookBooksCollection" destination="cvv-6i-VOX" id="oZW-mc-uv2"/>
                         <outlet property="GeneralBooksCollection" destination="dIl-NS-9j2" id="f0x-z7-PcR"/>
                         <outlet property="SearchBar" destination="dLz-2n-rEi" id="pQQ-mj-oDy"/>
                         <outlet property="TechBooksCollection" destination="Z2E-cr-0oV" id="gWX-gc-OFA"/>
