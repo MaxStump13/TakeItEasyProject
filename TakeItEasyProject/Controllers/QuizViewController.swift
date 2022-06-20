@@ -52,7 +52,12 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
         collView.reloadData()
     }
     @IBAction func logout(_ sender: Any) {
+        CurrentUser.currentUser.out(current: self)
     }
+    override func viewDidAppear(_ animated: Bool) {
+        self.username.text = CurrentUser.currentUser.name
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var front = Design().gradient(boundary: view)

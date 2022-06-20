@@ -28,6 +28,7 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     @IBOutlet weak var searchField: UITextField!
     
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var tableview: UICollectionView!
     
     
@@ -45,10 +46,14 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
         
     }
     override func viewWillAppear(_ animated: Bool) {
+        self.name.text = CurrentUser.currentUser.name
         sleep(1)
         tableview.reloadData()
     }
     
+    @IBAction func Logout(_ sender: Any) {
+        CurrentUser.currentUser.out(current: self)
+    }
     
     
     var results = [Result]()
