@@ -7,53 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6BD5D3285D2756009B3E99 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD5D2285D2756009B3E99 /* QuizViewController.swift */; };
+		3B6BD64328600B06009B3E99 /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64228600B06009B3E99 /* QuestionCollectionViewCell.swift */; };
+		3B6BD64528600B31009B3E99 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64428600B31009B3E99 /* QuestionViewController.swift */; };
+		3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */; };
+		3B6BD64928600C35009B3E99 /* SQLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64828600C35009B3E99 /* SQLHelper.swift */; };
+		3B6BD64B28600C9F009B3E99 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64A28600C9F009B3E99 /* QuizData.swift */; };
+		3B6BD64D286078F5009B3E99 /* QuizLabelRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6BD64C286078F4009B3E99 /* QuizLabelRes.swift */; };
 		3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */; };
 		3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */; };
 		3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B81285B91AC0030EC25 /* ViewController.swift */; };
-		3BEC0B85285B91AC0030EC25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B83285B91AC0030EC25 /* Main.storyboard */; };
 		3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */; };
 		3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B89285B91AF0030EC25 /* Assets.xcassets */; };
 		3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */; };
-		8434B9CD285BA3DA0028A5D8 /* Journal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */; };
-		8434B9CF285BA3E50028A5D8 /* Journal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */; };
-		8434B9D1285BA3F70028A5D8 /* DbHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D0285BA3F60028A5D8 /* DbHandler.swift */; };
-		8434B9D3285BA4040028A5D8 /* Note.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8434B9D2285BA4040028A5D8 /* Note.storyboard */; };
-		8434B9D5285BA40E0028A5D8 /* NoteContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D4285BA40E0028A5D8 /* NoteContent.swift */; };
-		8434B9D7285BA41D0028A5D8 /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8434B9D6285BA41D0028A5D8 /* NoteController.swift */; };
-		8438DC6C285BAF7400A67F49 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8438DC6B285BAF7400A67F49 /* SignUp.storyboard */; };
-		8438DC6E285BAFA000A67F49 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC6D285BAFA000A67F49 /* SignInViewController.swift */; };
-		8438DC70285BAFA700A67F49 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */; };
-		8438DC72285BAFAF00A67F49 /* UsersName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC71285BAFAF00A67F49 /* UsersName.swift */; };
-		8438DC74285BAFB600A67F49 /* DBHelperUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC73285BAFB600A67F49 /* DBHelperUser.swift */; };
-		8438DC77285BB02D00A67F49 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC75285BB02D00A67F49 /* User+CoreDataClass.swift */; };
-		8438DC78285BB02D00A67F49 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */; };
-		84574704285C2A78003D295C /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84574703285C2A78003D295C /* SearchController.swift */; };
+		3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B96285C9BAA0030EC25 /* SQLite.swift */; };
+		3BEC0B99285CA2B60030EC25 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B98285CA2B60030EC25 /* Quiz.swift */; };
+		3BEC0B9B285CA2C80030EC25 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B9A285CA2C70030EC25 /* Result.swift */; };
+		3BEC0B9D285CAFA30030EC25 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0B9C285CAFA30030EC25 /* Score.swift */; };
+		3BEC0BA1285CB6340030EC25 /* QuizDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC0BA0285CB6340030EC25 /* QuizDB.swift */; };
+		3BEC0BAD285D0E780030EC25 /* QuizStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BEC0BAC285D0E780030EC25 /* QuizStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B6BD5D2285D2756009B3E99 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		3B6BD64228600B06009B3E99 /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B6BD64428600B31009B3E99 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B6BD64828600C35009B3E99 /* SQLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLHelper.swift; sourceTree = "<group>"; };
+		3B6BD64A28600C9F009B3E99 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
+		3B6BD64C286078F4009B3E99 /* QuizLabelRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizLabelRes.swift; sourceTree = "<group>"; };
 		3BEC0B7A285B91AC0030EC25 /* TakeItEasyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakeItEasyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3BEC0B81285B91AC0030EC25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3BEC0B84285B91AC0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3BEC0B87285B91AC0030EC25 /* TakeItEasyProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TakeItEasyProject.xcdatamodel; sourceTree = "<group>"; };
 		3BEC0B89285B91AF0030EC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BEC0B8C285B91AF0030EC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BEC0B8E285B91AF0030EC25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Journal+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8434B9D0285BA3F60028A5D8 /* DbHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DbHandler.swift; sourceTree = "<group>"; };
-		8434B9D2285BA4040028A5D8 /* Note.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Note.storyboard; sourceTree = "<group>"; };
-		8434B9D4285BA40E0028A5D8 /* NoteContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteContent.swift; sourceTree = "<group>"; };
-		8434B9D6285BA41D0028A5D8 /* NoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
-		8438DC6B285BAF7400A67F49 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
-		8438DC6D285BAFA000A67F49 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		8438DC71285BAFAF00A67F49 /* UsersName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersName.swift; sourceTree = "<group>"; };
-		8438DC73285BAFB600A67F49 /* DBHelperUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelperUser.swift; sourceTree = "<group>"; };
-		8438DC75285BB02D00A67F49 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		84574703285C2A78003D295C /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		3BEC0B96285C9BAA0030EC25 /* SQLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		3BEC0B98285CA2B60030EC25 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		3BEC0B9A285CA2C70030EC25 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3BEC0B9C285CAFA30030EC25 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		3BEC0BA0285CB6340030EC25 /* QuizDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDB.swift; sourceTree = "<group>"; };
+		3BEC0BAC285D0E780030EC25 /* QuizStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +66,6 @@
 		3BEC0B71285B91AC0030EC25 = {
 			isa = PBXGroup;
 			children = (
-				8434B9CC285BA3DA0028A5D8 /* Journal+CoreDataClass.swift */,
-				8434B9CE285BA3E50028A5D8 /* Journal+CoreDataProperties.swift */,
-				8438DC75285BB02D00A67F49 /* User+CoreDataClass.swift */,
-				8438DC76285BB02D00A67F49 /* User+CoreDataProperties.swift */,
 				3BEC0B7C285B91AC0030EC25 /* TakeItEasyProject */,
 				3BEC0B7B285B91AC0030EC25 /* Products */,
 			);
@@ -91,23 +83,25 @@
 			isa = PBXGroup;
 			children = (
 				3BEC0B7D285B91AC0030EC25 /* AppDelegate.swift */,
-				8434B9D0285BA3F60028A5D8 /* DbHandler.swift */,
-				8434B9D4285BA40E0028A5D8 /* NoteContent.swift */,
-				8434B9D6285BA41D0028A5D8 /* NoteController.swift */,
+				3BEC0B9C285CAFA30030EC25 /* Score.swift */,
 				3BEC0B7F285B91AC0030EC25 /* SceneDelegate.swift */,
 				3BEC0B81285B91AC0030EC25 /* ViewController.swift */,
-				3BEC0B83285B91AC0030EC25 /* Main.storyboard */,
-				84574703285C2A78003D295C /* SearchController.swift */,
-				8434B9D2285BA4040028A5D8 /* Note.storyboard */,
 				3BEC0B89285B91AF0030EC25 /* Assets.xcassets */,
 				3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */,
 				3BEC0B8E285B91AF0030EC25 /* Info.plist */,
-				8438DC6B285BAF7400A67F49 /* SignUp.storyboard */,
-				8438DC6D285BAFA000A67F49 /* SignInViewController.swift */,
-				8438DC6F285BAFA700A67F49 /* SignUpViewController.swift */,
-				8438DC71285BAFAF00A67F49 /* UsersName.swift */,
-				8438DC73285BAFB600A67F49 /* DBHelperUser.swift */,
 				3BEC0B86285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld */,
+				3BEC0B96285C9BAA0030EC25 /* SQLite.swift */,
+				3BEC0B98285CA2B60030EC25 /* Quiz.swift */,
+				3BEC0B9A285CA2C70030EC25 /* Result.swift */,
+				3BEC0BA0285CB6340030EC25 /* QuizDB.swift */,
+				3BEC0BAC285D0E780030EC25 /* QuizStoryboard.storyboard */,
+				3B6BD5D2285D2756009B3E99 /* QuizViewController.swift */,
+				3B6BD64228600B06009B3E99 /* QuestionCollectionViewCell.swift */,
+				3B6BD64428600B31009B3E99 /* QuestionViewController.swift */,
+				3B6BD64628600B4F009B3E99 /* QuizCollectionViewCell.swift */,
+				3B6BD64828600C35009B3E99 /* SQLHelper.swift */,
+				3B6BD64A28600C9F009B3E99 /* QuizData.swift */,
+				3B6BD64C286078F4009B3E99 /* QuizLabelRes.swift */,
 			);
 			path = TakeItEasyProject;
 			sourceTree = "<group>";
@@ -170,11 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8434B9D3285BA4040028A5D8 /* Note.storyboard in Resources */,
 				3BEC0B8D285B91AF0030EC25 /* LaunchScreen.storyboard in Resources */,
 				3BEC0B8A285B91AF0030EC25 /* Assets.xcassets in Resources */,
-				8438DC6C285BAF7400A67F49 /* SignUp.storyboard in Resources */,
-				3BEC0B85285B91AC0030EC25 /* Main.storyboard in Resources */,
+				3BEC0BAD285D0E780030EC25 /* QuizStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,36 +177,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8438DC70285BAFA700A67F49 /* SignUpViewController.swift in Sources */,
+				3BEC0BA1285CB6340030EC25 /* QuizDB.swift in Sources */,
+				3B6BD5D3285D2756009B3E99 /* QuizViewController.swift in Sources */,
+				3BEC0B97285C9BAA0030EC25 /* SQLite.swift in Sources */,
+				3B6BD64328600B06009B3E99 /* QuestionCollectionViewCell.swift in Sources */,
+				3B6BD64728600B4F009B3E99 /* QuizCollectionViewCell.swift in Sources */,
+				3B6BD64D286078F5009B3E99 /* QuizLabelRes.swift in Sources */,
+				3BEC0B99285CA2B60030EC25 /* Quiz.swift in Sources */,
+				3B6BD64528600B31009B3E99 /* QuestionViewController.swift in Sources */,
 				3BEC0B82285B91AC0030EC25 /* ViewController.swift in Sources */,
-				8438DC74285BAFB600A67F49 /* DBHelperUser.swift in Sources */,
-				8438DC72285BAFAF00A67F49 /* UsersName.swift in Sources */,
 				3BEC0B88285B91AC0030EC25 /* TakeItEasyProject.xcdatamodeld in Sources */,
-				8434B9CD285BA3DA0028A5D8 /* Journal+CoreDataClass.swift in Sources */,
-				8434B9D5285BA40E0028A5D8 /* NoteContent.swift in Sources */,
-				8438DC77285BB02D00A67F49 /* User+CoreDataClass.swift in Sources */,
 				3BEC0B7E285B91AC0030EC25 /* AppDelegate.swift in Sources */,
-				8438DC6E285BAFA000A67F49 /* SignInViewController.swift in Sources */,
-				8438DC78285BB02D00A67F49 /* User+CoreDataProperties.swift in Sources */,
-				84574704285C2A78003D295C /* SearchController.swift in Sources */,
+				3B6BD64928600C35009B3E99 /* SQLHelper.swift in Sources */,
+				3B6BD64B28600C9F009B3E99 /* QuizData.swift in Sources */,
 				3BEC0B80285B91AC0030EC25 /* SceneDelegate.swift in Sources */,
-				8434B9D1285BA3F70028A5D8 /* DbHandler.swift in Sources */,
-				8434B9CF285BA3E50028A5D8 /* Journal+CoreDataProperties.swift in Sources */,
-				8434B9D7285BA41D0028A5D8 /* NoteController.swift in Sources */,
+				3BEC0B9D285CAFA30030EC25 /* Score.swift in Sources */,
+				3BEC0B9B285CA2C80030EC25 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3BEC0B83285B91AC0030EC25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3BEC0B84285B91AC0030EC25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3BEC0B8B285B91AF0030EC25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -352,7 +336,7 @@
 				INFOPLIST_FILE = TakeItEasyProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = QuizStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -381,7 +365,7 @@
 				INFOPLIST_FILE = TakeItEasyProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = QuizStoryboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
