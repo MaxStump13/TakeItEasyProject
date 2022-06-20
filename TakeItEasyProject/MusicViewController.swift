@@ -256,7 +256,7 @@ func imageLoader(urlString: String, cell : MusicCollectionViewCell){
     
     
     
-    @IBAction func searchButton(_ sender: Any) {
+    @IBAction func search(_ sender: Any) {
         player?.pause()
         self.trackName.removeAll()
         self.artist.removeAll()

@@ -32,6 +32,11 @@ class QuestionViewController: UIViewController, UICollectionViewDelegate, UIColl
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var front = Design().gradient(boundary: view)
+        view.layer.insertSublayer(front, at: 0)
+        
+        
         titleLabel.text = quiz?.name
 
         // Do any additional setup after loading the view.

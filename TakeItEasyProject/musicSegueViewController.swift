@@ -60,10 +60,6 @@ class musicSegueViewController: UIViewController {
     
     @IBOutlet weak var progBar: UIProgressView!
     
-    @IBOutlet weak var startTime: UILabel!
-    
-    @IBOutlet weak var resultTime: UILabel!
-    
     
     var player : AVPlayer?
     
@@ -82,17 +78,6 @@ class musicSegueViewController: UIViewController {
     
     
     
-    
-    
-    
-    @IBAction func backBtn(_ sender: Any) {
-        
-        dismiss(animated: true)
-    }
-    
-    
-    
-    
     @IBAction func playBtn(_ sender: Any) {
         self.isPlaying.toggle()
         if isPlaying == true {
@@ -101,14 +86,7 @@ class musicSegueViewController: UIViewController {
         }else{
             player?.play()
         }
-    }
-    
-    
-    
-    @IBAction func nextBtn(_ sender: Any) {
-        
-    }
-    
+    }    
     
     func next(){
         
