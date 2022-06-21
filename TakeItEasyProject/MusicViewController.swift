@@ -87,38 +87,14 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         var myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MusicCollectionViewCell
-//        switch indexPath.row{
-//
-//        case 0:
-//            getData(from: song[0])
-//            loadRadio(radioURL: song[0])
-//        case 1:
-//            getData(from: song[1])
-//            print(song[1])
-//            loadRadio(radioURL: song[1])
-//        case 2:
-//            getData(from: song[2])
-//            print(song[2])
-//            loadRadio(radioURL: song[2])
-//        case 3:
-//            getData(from: song[3])
-//            print(song[3])
-//            loadRadio(radioURL: song[3])
-//        case 4:
-//            getData(from: song[4])
-//            print(song[4])
-//            loadRadio(radioURL: song[4])
-//        default:
-//            print("")
-//
-//        }
+
         imageLoader(urlString: art100[indexPath.row], cell: myCell)
         
         var storyBoard = UIStoryboard(name: "Main", bundle: nil)
         var musicSegueVC = storyBoard.instantiateViewController(withIdentifier: "musicSegue") as! musicSegueViewController
         var myImg = imageLoader(urlString: art100[indexPath.row], cell: myCell)
         
-//        musicSegueVC.art = myImg
+
         
         musicSegueVC.music = song[indexPath.row]
         musicSegueVC.urlPicture = art100[indexPath.row]
@@ -162,7 +138,7 @@ class MusicViewController: UIViewController, UICollectionViewDelegate, UICollect
                 print("in data ", data)
                 result = try JSONDecoder().decode(Response.self, from: data)
                 
-                for i in 0..<5{
+                for i in 0..<25{
                 var track = result!.results[i].trackName
                 var collection = result!.results[i].collectionName
                 var song = result!.results[i].previewUrl
@@ -279,25 +255,7 @@ func imageLoader(urlString: String, cell : MusicCollectionViewCell){
     }
     
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        if segue.identifier ==
-//    }
-//
-    
-    
-    
-    
-    
-    
-    
-//    func insertItems(){
-//        collectionView.performBatchUpdates({
-//            for _ in 0..<5{
-//                let indexPath = indexPath(row: data.count - 1, section: 0)
-//                collectionView.insertItems(at: [indexPath])
-//            }
-//        }, completion: nil)
-//    }
+
     
     
 
