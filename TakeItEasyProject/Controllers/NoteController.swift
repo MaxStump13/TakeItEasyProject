@@ -94,6 +94,9 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let front = Design()
         view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
         
+        let img = UIImage()
+        search.layer.borderColor = CGColor.init(red: 0, green: 0, blue: 0, alpha: 0)
+        
     }
 
     //creates new cell entry on button click
