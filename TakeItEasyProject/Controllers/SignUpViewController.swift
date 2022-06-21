@@ -19,7 +19,6 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var enterPasswordTextField: UITextField!
     @IBOutlet weak var ReEnterPasswordTextField: UITextField!
     @IBOutlet weak var mobileNumberTextField: UITextField!
-    @IBOutlet weak var remSwitch: UISwitch!
     @IBOutlet weak var SignIn: UIButton!
     
     // Various variables for usage
@@ -36,32 +35,6 @@ class SignUpViewController: UIViewController {
         var front = Design()
         view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
     }
-    
-    
-    // Action function used for keychain with the rememberMe switch
-    // This checks if the switch is on to save the credentials or not for the user
-    
-    @IBAction func rememberMe(_ sender: Any) {
-        if(remSwitch.isOn ==  true){
-            switchStatus.set(true, forKey: "switch")
-                
-                userDef.set(enterEmailTextField.text as? String, forKey: "UN")
-                  let attribute : [String : Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : enterEmailTextField.text!, kSecValueData as String : enterPasswordTextField.text!.data(using: .utf8)]
-                  if(SecItemAdd(attribute as CFDictionary, nil ) == noErr){
-                      print("remember me is saved")
-                  }else{
-                      print("remember me not saved")
-                  }
-              }else{
-                  switchStatus.set(false, forKey: "switch")
-                  let req : [String: Any] = [kSecClass as String : kSecClassGenericPassword, kSecAttrAccount as String : enterEmailTextField.text!]
-                  if(SecItemDelete(req as CFDictionary) == noErr){
-                      print("delete remember")
-                  }else{
-                      print("error with deleting remember")
-                  }
-              }
-          }
     
     
     // This action function calls to the signUp() function
