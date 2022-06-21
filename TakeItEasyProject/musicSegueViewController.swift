@@ -45,6 +45,7 @@ class musicSegueViewController: UIViewController {
         artistName.text = name
         songTitle.text = songName
         
+        
         artImg.segueLoader(urlString: urlPicture)
         
         loadRadio(radioURL: music)
@@ -68,7 +69,7 @@ class musicSegueViewController: UIViewController {
     var art = UIImage()
     var urlPicture = ""
     var music = ""
-    
+    var a = UIImageView()
     
     var myTime : Int = 30
     var timer = Timer()
@@ -82,9 +83,10 @@ class musicSegueViewController: UIViewController {
         self.isPlaying.toggle()
         if isPlaying == true {
             player?.pause()
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            timer.invalidate()
         }else{
             player?.play()
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         }
     }    
     
