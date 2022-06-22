@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 
 class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate {
+    var test = UIColor()
     
     var filter: [String] = [] //store for table data, variable exists in order to allow for search
     var table = DbHandler.dbHandler.retrieveAllNote() //primary container for note core-data
