@@ -8,7 +8,8 @@
 import UIKit
 
 class QuestionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+    var front: Design?
+
     
     @IBOutlet weak var questionCollection : UICollectionView!
     @IBOutlet weak var titleLabel : UILabel!

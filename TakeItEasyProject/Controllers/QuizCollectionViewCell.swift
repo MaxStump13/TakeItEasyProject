@@ -12,6 +12,8 @@ class QuizCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var resLab: UILabel!
+    @IBOutlet weak var msg: UILabel!
+    @IBOutlet weak var points: UILabel!
     
     
     var quiz : QuizDB! {
