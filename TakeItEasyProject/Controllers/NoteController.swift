@@ -9,6 +9,7 @@ import UIKit
 import CoreData
 
 class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate {
+    var test = UIColor()
     
     var filter: [String] = [] //store for table data, variable exists in order to allow for search
     var table = DbHandler.dbHandler.retrieveAllNote() //primary container for note core-data
@@ -93,9 +94,6 @@ class NoteController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //Design Elements
         let front = Design()
         view.layer.insertSublayer((front.gradient(boundary: view)), at: 0)
-        
-        let img = UIImage()
-        search.layer.borderColor = CGColor.init(red: 0, green: 0, blue: 0, alpha: 0)
         
     }
 

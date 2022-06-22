@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class Design{
+
     
     //var topColor = UIColor(red: 0.17, green: 1.00, blue: 0.58, alpha: 1.0)
     var topColor = UIColor.blue
