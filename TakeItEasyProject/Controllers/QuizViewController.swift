@@ -10,7 +10,8 @@ import UIKit
 class QuizViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     
-    
+    var front: Design?
+
     var quizzes = Quiz.getQuizzes()
     var quizDB : [QuizDB]?
     
