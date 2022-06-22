@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2un-Y1-23O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KVm-Cq-KEA">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -142,12 +142,13 @@
                                 <rect key="frame" x="154" y="154" width="170" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="33"/>
+                                <color key="textColor" name="inverseAccent"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="powersleep" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Nxr-tA-VrO">
                                 <rect key="frame" x="20" y="139" width="167" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="tintColor" name="inverseAccent"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QpL-DG-4f6">
                                 <rect key="frame" x="124" y="633" width="167" height="31"/>
@@ -1016,7 +1017,10 @@
                                                         <constraint firstAttribute="width" constant="250" id="z7v-1f-0Va"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Button">
+                                                        <color key="baseForegroundColor" name="Accent"/>
+                                                        <color key="baseBackgroundColor" name="inverseAccent"/>
+                                                    </buttonConfiguration>
                                                     <connections>
                                                         <action selector="choose2:" destination="Yge-1N-SkE" eventType="touchUpInside" id="47I-9v-Ww5"/>
                                                     </connections>
@@ -1028,7 +1032,10 @@
                                                         <constraint firstAttribute="width" constant="250" id="Wdi-7e-rFp"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Button">
+                                                        <color key="baseForegroundColor" name="Accent"/>
+                                                        <color key="baseBackgroundColor" name="inverseAccent"/>
+                                                    </buttonConfiguration>
                                                     <connections>
                                                         <action selector="choose3:" destination="Yge-1N-SkE" eventType="touchUpInside" id="qsa-Hw-zTJ"/>
                                                     </connections>
@@ -1040,7 +1047,10 @@
                                                         <constraint firstAttribute="width" constant="250" id="RjW-ry-dtU"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Button">
+                                                        <color key="baseForegroundColor" name="Accent"/>
+                                                        <color key="baseBackgroundColor" name="inverseAccent"/>
+                                                    </buttonConfiguration>
                                                     <connections>
                                                         <action selector="choose4:" destination="Yge-1N-SkE" eventType="touchUpInside" id="5b9-TU-WUH"/>
                                                     </connections>
@@ -1052,7 +1062,10 @@
                                                         <constraint firstAttribute="height" constant="35" id="u3F-dP-RhR"/>
                                                     </constraints>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Button">
+                                                        <color key="baseForegroundColor" name="Accent"/>
+                                                        <color key="baseBackgroundColor" name="inverseAccent"/>
+                                                    </buttonConfiguration>
                                                     <connections>
                                                         <action selector="choose1:" destination="Yge-1N-SkE" eventType="touchUpInside" id="Kco-15-HWe"/>
                                                     </connections>
@@ -1061,20 +1074,20 @@
                                                     <rect key="frame" x="82" y="548" width="250" height="46"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J37-mj-7ch">
-                                                    <rect key="frame" x="24" y="44" width="365" height="65"/>
+                                                    <rect key="frame" x="24" y="44" width="365" height="117"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="365" id="5pz-Zo-Exo"/>
-                                                        <constraint firstAttribute="height" constant="65" id="Yqy-I4-FJf"/>
+                                                        <constraint firstAttribute="height" constant="117" id="Yqy-I4-FJf"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Accent"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="dUG-oV-kJa" firstAttribute="top" secondItem="g0a-G7-zJ6" secondAttribute="bottom" constant="30" id="1Xo-r0-YqZ"/>
                                                 <constraint firstItem="a5O-d2-IwK" firstAttribute="top" secondItem="YUL-fd-CGp" secondAttribute="bottom" constant="30" id="CJ8-jh-fAH"/>
-                                                <constraint firstItem="YUL-fd-CGp" firstAttribute="top" secondItem="J37-mj-7ch" secondAttribute="bottom" constant="102" id="K8j-BX-fam"/>
+                                                <constraint firstItem="YUL-fd-CGp" firstAttribute="top" secondItem="J37-mj-7ch" secondAttribute="bottom" constant="50" id="K8j-BX-fam"/>
                                                 <constraint firstItem="J37-mj-7ch" firstAttribute="top" secondItem="cx1-rD-dwx" secondAttribute="top" constant="44" id="KDG-Kb-vNV"/>
                                                 <constraint firstAttribute="trailing" secondItem="YUL-fd-CGp" secondAttribute="trailing" constant="82" id="L8M-a3-uCu"/>
                                                 <constraint firstItem="eEp-XG-Vmw" firstAttribute="top" secondItem="dUG-oV-kJa" secondAttribute="bottom" constant="19" id="QbU-Ez-xsY"/>
@@ -1118,7 +1131,7 @@
                                     <constraint firstAttribute="width" constant="225" id="kzd-5s-i5K"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Accent"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92c-Y5-8fu">
@@ -1128,7 +1141,10 @@
                                     <constraint firstAttribute="width" constant="250" id="YAP-g3-1dZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit">
+                                    <color key="baseForegroundColor" name="Accent"/>
+                                    <color key="baseBackgroundColor" name="inverseAccent"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="submit:" destination="bdD-lR-qkH" eventType="touchUpInside" id="Pnq-3Q-IhK"/>
                                 </connections>
@@ -1152,7 +1168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40I-tE-S0q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3254" y="434"/>
+            <point key="canvasLocation" x="3253.6231884057975" y="433.92857142857139"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="bKf-xE-SfI">
@@ -1186,7 +1202,7 @@
                                                         <constraint firstAttribute="width" constant="136" id="Wd2-Zj-oGg"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Accent"/>
                                                     <nil key="highlightedColor"/>
                                                     <color key="shadowColor" systemColor="labelColor"/>
                                                 </label>
@@ -1204,7 +1220,7 @@
                                                         <constraint firstAttribute="height" constant="36" id="inI-t1-nsE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" name="Accent"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1240,7 +1256,7 @@
                                     <constraint firstAttribute="width" constant="112" id="BQH-9K-wvK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Accent"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Keu-aC-bkZ">
@@ -1250,7 +1266,9 @@
                                     <constraint firstAttribute="height" constant="31" id="Qsg-M9-lap"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out">
+                                    <color key="baseForegroundColor" name="inverseAccent"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="logout:" destination="2un-Y1-23O" eventType="touchUpInside" id="A94-ix-ay4"/>
                                 </connections>
@@ -1258,7 +1276,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnW-lG-DpJ">
                                 <rect key="frame" x="20" y="53" width="108" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Refresh">
+                                    <color key="baseForegroundColor" name="inverseAccent"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="refresh:" destination="2un-Y1-23O" eventType="touchUpInside" id="CJO-UN-CFG"/>
                                 </connections>
@@ -1308,7 +1328,7 @@
             <color red="0.16862745100000001" green="0.51764705879999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="inverseAccent">
-            <color red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.57599997520446777" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
