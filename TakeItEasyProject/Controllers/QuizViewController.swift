@@ -27,13 +27,10 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         var cell = collView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! QuizCollectionViewCell
         cell.quiz = quizDB![indexPath.row]
-        cell.resLab.text = String(QuizLabelRes.qLabel.qresL[indexPath.row])
+        cell.resLab.text = ("You Scored: " + String(QuizLabelRes.qLabel.qresL[indexPath.row]) + "%")
         print(cell.quiz.name)
         print(cell.quiz.image)
-        
         return cell
-        
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -42,7 +39,6 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
         questionViewCont.quiz = quizzes[indexPath.row]
         QuizLabelRes.qLabel.id = indexPath.row
         present(questionViewCont, animated: true, completion: nil)
-        
     }
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -58,15 +54,12 @@ class QuizViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidAppear(_ animated: Bool) {
         self.username.text = CurrentUser.currentUser.name
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         var front = Design().gradient(boundary: view)
         view.layer.insertSublayer(front, at: 0)
-        
         collView.dataSource = self
         collView.delegate = self
-        
         initializeSQLite()
         insertAllData()
         quizDB = SQLite.sqlObj.getData()
